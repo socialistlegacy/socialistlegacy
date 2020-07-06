@@ -1,0 +1,23 @@
+{{ define "main" }}
+  <main id="main">
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+    <ul class="patterns-list">
+    {{ range .Pages.ByPublishDate.Reverse }}
+      <li>
+        <h2>
+          <a href="{{ .Permalink }}">
+            {{ .Title }} {{ with .Params.authors }}&mdash;
+          {{ range . }}
+              {{ $href := print ("authors/" | absLangURL) (. | urlize) "/" }}
+              <a href="{{ $href }}">{{ . }}</a>
+          {{ end }}
+    {{ end }}
+
+          </a>
+        </h2>
+      </li>        
+    {{ end }}
+    </ul>
+  </main>
+{{ end }}

@@ -1,0 +1,62 @@
+{{ define "main" }}
+  <main id="main">
+    <h1>
+      {{ .Title }}
+    </h1>
+<br>
+    {{ with .Params.authors }}
+      <div class="tags">
+        <strong aria-hidden="true">Author: </strong>
+        <ul aria-label="tags">
+          {{ range . }}
+            <li>
+              {{ $href := print ("authors/" | absLangURL) (. | urlize) "/" }}
+              <a href="{{ $href }}">{{ . }}</a>
+            </li>
+          {{ end }}
+        </ul>
+      </div>
+    {{ end }}
+    {{ with .Params.sources }}
+      <div class="tags">
+        <strong aria-hidden="true">Source: </strong>
+        <ul aria-label="tags">
+          {{ range . }}
+            <li>
+              {{ $href := print ("sources/" | absLangURL) (. | urlize) "/" }}
+              <a href="{{ $href }}">{{ . }}</a>
+            </li>
+          {{ end }}
+        </ul>
+      </div>
+    {{ end }}
+
+
+    {{ if ne .Params.toc false }}
+      {{ partial "toc" . }}
+    {{ end }}
+    {{ .Content }}
+<br>
+<br>
+<br>
+    {{ if isset .Params "exlink" }}
+	<a href="{{ .Params.exlink }}">link</a>
+	<br>
+	<br>
+    {{ end }}
+    {{ with .Params.tags }}
+      <div class="tags">
+        <strong aria-hidden="true">Tags: </strong>
+        <ul aria-label="tags">
+          {{ range . }}
+            <li>
+              {{ $href := print ("tags/" | absLangURL) (. | urlize) "/" }}
+              <a href="{{ $href }}">{{ . }}</a>
+            </li>
+          {{ end }}
+        </ul>
+      </div>
+    {{ end }}
+
+  </main>
+{{ end }}

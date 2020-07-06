@@ -1,0 +1,52 @@
+baseURL = "https://socialistlegacy.com/"
+languageCode = "en-us"
+defaultContentLanguage = "en"
+title = "Socialist Legacy"
+theme = "cupper-hugo-theme"
+googleAnalytics = "UA-123456789-1"
+disqusShortname = "yourdiscussshortname"
+
+[taxonomies]
+  tag = "tags"
+  author = "authors"
+  sources = "sources"
+
+[permalinks]
+  post = "/:filename/"
+
+[imaging]
+  quality = 99
+
+[params]
+  description = "&nbsp;On the Socialist Legacy"
+  # For more date formats see https://gohugo.io/functions/format/
+  dateFormat = "Jan 2, 2006"
+  codePenUser = "someUser"
+  mainSections = ["epigraphia", "ephemera"]
+
+
+[menu]
+  [[menu.nav]]
+    name = "About"
+    url = "/about/"
+    weight = 1
+  [[menu.nav]]
+    name = "Epigraphia"
+    url = "/epigraphia/"
+    weight = 2
+  [[menu.nav]]
+    name = "Ephemera"
+    url = "/ephemera/"
+    weight = 3
+  [[menu.nav]]
+    name = "Tags"
+    url = "/tags/"
+    weight = 4
+  [[menu.nav]]
+    name = "Authors"
+    url = "/authors/"
+    weight = 4
+  [[menu.nav]]
+    name = "Sources"
+    url = "/sources/"
+    weight = 4
