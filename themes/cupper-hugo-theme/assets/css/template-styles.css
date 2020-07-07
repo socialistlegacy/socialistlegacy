@@ -48,7 +48,7 @@ p + p {
 }
 a {
     text-decoration: none;
-    border-bottom: 1px solid;
+    border-bottom: 0px solid;
 }
 abbr {
     text-decoration: none;
@@ -93,7 +93,7 @@ figure p img {
     outline: 4px solid #999;
 }
 a {
-  outline-offset: 0px;
+  outline-offset: 2px;
 }
 
 /* Fix for IE :( */
