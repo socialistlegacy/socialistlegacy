@@ -367,6 +367,12 @@ caption {
     margin-right: auto;
     max-width: 30rem;
 }
+.center-image {
+    text-align: center;
+    }
+.inline {
+    display: inline-block;
+    }
 .main-and-footer {
     margin-left: 15rem;
 }
