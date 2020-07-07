@@ -77,7 +77,7 @@ img[src$='#right']
 }
 .img-link {
     text-decoration: none;
-    border: 0;
+    border: 0 none;
     border-bottom: none;
 }
 p img {
