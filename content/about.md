@@ -7,7 +7,7 @@ The legacy of socialism is a legacy of failure.
 
 Socialism, as an idea and as the movement it inspired, was born in the early 19th century. By the dawn of the 20th century that movement was poised to change the world through international revolution. But the revolution failed.
 
-The world did change, but not for the better. The result of the failed revolution was, in the words of Rosa Luxemburg, the regression of society to barbarism. Capitalism proved not a passing, transitional phase on the way to a higher form of human emancipation that would both complete and transcend the bourgeois revolutionary epoch, but the degeneration of that revolutionary society, its collapse back into the bloody domination of man by man it had presumed to overcome.
+The world did change, but not for the better. The result of the failed revolution was, [in the words of Rosa Luxemburg](https://www.marxists.org/archive/luxemburg/1915/junius/ch01.htm), the regression of society to barbarism. Capitalism proved not a passing, transitional phase on the way to a higher form of human emancipation that would both complete and transcend the bourgeois revolutionary epoch, but the degeneration of that revolutionary society, its collapse back into the bloody domination of man by man it had presumed to overcome.
 
 We are now buried beneath the rubble of a catastrophe that has brought centuries of progress to ruin. To the extent that socialism is remembered at all, it is reduced to a grotesque mockery of its former self. “Socialism” has come to mean, for its detractors and proponents alike, at best the preservation of the status quo; at worst, wallowing in the ongoing self-destruction of society as if this were “revolutionary”.
 
@@ -22,6 +22,8 @@ The purpose of this project is not really political or even educational, but aes
 It seeks to do so by plumbing into the depths of the archives of the old socialist tradition, recovering fragments that might perplex or astound or captivate the reader or viewer, to provoke at once wonder and melancholy, and more importantly, to induce a desire for critical reflection. 
 
 Deeper consideration of this legacy and its loss is, at least at present, beyond the scope of this project, but I’d strongly encourage anyone moved to so reflect to engage with the work of the [Platypus Affiliated Society](http://platypus1917.org/), whose mission is precisely to educate the new generation in the meaning of this tradition and its loss.
+
+*The Socialist Legacy* intends to [brush history against the grain](https://www.sfu.ca/~andrewf/CONCEPT2.html), to expose the constellation our moment forms invisibly with an earlier one, lost in the thickets of long ago, in hopes that the continuum of history into which both are assimilated might still be blown sky-high.
 
 “Only that historian will have the gift of fanning the spark of hope in the past who is firmly convinced that *even the dead* will not be safe from the enemy if he wins. And this enemy has not ceased to be victorious.”
 
