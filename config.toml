@@ -1,7 +1,7 @@
 baseURL = "https://socialistlegacy.github.io/"
 languageCode = "en-us"
 defaultContentLanguage = "en"
-title = "Socialist Legacy"
+title = "Remnants of the Socialist Legacy"
 theme = "cupper-hugo-theme"
 googleAnalytics = "UA-123456789-1"
 disqusShortname = "yourdiscussshortname"
@@ -18,7 +18,7 @@ disqusShortname = "yourdiscussshortname"
   quality = 99
 
 [params]
-  description = "&nbsp;On the Socialist Legacy"
+  description = "&nbsp;Remnants of the Socialist Legacy"
   # For more date formats see https://gohugo.io/functions/format/
   dateFormat = "Jan 2, 2006"
   codePenUser = "someUser"
