@@ -50,8 +50,8 @@ a {
     text-decoration: none;
     border-bottom: 1px solid;
 }
-.contains-image { 
-    border: none; 
+a img { 
+    border-bottom: 0px; 
 }
 abbr {
     text-decoration: none;
