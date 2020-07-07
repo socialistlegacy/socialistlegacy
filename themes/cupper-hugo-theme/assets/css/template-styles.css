@@ -333,7 +333,7 @@ caption {
 .intro-and-nav {
     font-size: .9rem;
     font-weight: bold;
-    width: 18rem;
+    width: 15rem;
     height: 100vh;
     position: fixed;
     top: 0;
@@ -341,7 +341,7 @@ caption {
     border-right: 2px solid;
 }
 .intro-and-nav > div {
-    padding: 2.25rem;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     height: 100%;
