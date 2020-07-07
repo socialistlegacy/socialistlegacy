@@ -4,13 +4,13 @@ tags: ["poetry"]
 title: "To Posterity"
 authors: ["Brecht"]
 tags: ["regression"]
-summary: "Indeed I live in the dark ages!"
+
 ---
 
 
 1\.
 
-Indeed I live in the dark ages!\
+Indeed I live in the dark ages!<!--more-->\
 A guileless word is an absurdity. A smooth forehead betokens\
 A hard heart. He who laughs\
 Has not yet heard\

@@ -1,6 +1,7 @@
 {{ define "main" }}
   <main id="main">
     <h1>{{ .Title }}</h1>
+    {{ with .Params.featured_image }}<img src="{{ . }}">{{ end }}
     {{ .Content }}
   </main>
 {{ end }}
