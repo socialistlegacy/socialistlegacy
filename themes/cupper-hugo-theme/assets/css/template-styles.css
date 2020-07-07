@@ -77,9 +77,11 @@ img[src$='#right']
 }
 .img-link {
     text-decoration: none;
-    border: 0 none;
-    padding: 0px;
-    border-bottom: 0px solid;
+    border:0px;
+    outline:none;
+    border-width: 0px;
+    outline-width:0px;
+    border-bottom: none;
 }
 p img {
     margin: 0.75rem 0;
