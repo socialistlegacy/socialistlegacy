@@ -18,7 +18,7 @@ disqusShortname = "yourdiscussshortname"
   quality = 99
 
 [params]
-  description = "&nbsp;The Socialist Legacy"
+  description = "&nbsp;&nbsp;The Socialist Legacy"
   # For more date formats see https://gohugo.io/functions/format/
   dateFormat = "Jan 2, 2006"
   codePenUser = "someUser"
