@@ -21,7 +21,7 @@ The purpose of this project is not really political or even educational, but aes
 
 It seeks to do so by plumbing into the depths of the archives of the old socialist tradition, recovering fragments that might perplex or astound or captivate the reader or viewer, to provoke at once wonder and melancholy, and more importantly, to induce a desire for critical reflection. 
 
-Deeper consideration of this legacy and its loss is, at least at present, beyond the scope of this project, but I’d strongly encourage anyone moved to so reflect to engage with the work of the [Platypus Affiliated Society](http://platypus1917.org/), whose mission is precisely to educate the new generation in the meaning of this tradition and its loss.
+Deeper consideration of this legacy and its loss is, at least at present, beyond the scope of this project, but anyone moved to so reflect is strongly encouraged to engage with the work of the [Platypus Affiliated Society](http://platypus1917.org/), whose mission is precisely to educate the new generation in the meaning of this tradition and its loss.
 
 *The Socialist Legacy* intends to [brush history against the grain](https://www.sfu.ca/~andrewf/CONCEPT2.html), to expose the constellation our moment forms invisibly with an earlier one, lost in the thickets of long ago, in hopes that the continuum of history into which both are assimilated might still be blown sky-high.
 
