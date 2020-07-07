@@ -18,14 +18,14 @@ Is this what we must bear, O Freedom, Mother,\
 Must death another take, and yet another,\
 &nbsp; &nbsp;While tears and lamentations thru the land\
 &nbsp; &nbsp; &nbsp; &nbsp; Show the great price we pay?\
-Yet, if it must be, Freedom, none say nay.\
+Yet, if it must be, Freedom, none say nay.
 
-See, Thou, these waiting for the hangman’s halter;---
-   These friends of man, must there be given to death?
-      Freedom, we ask again!
-If in the sacrifice we do not falter,
-   Wilt thou repay us for their strangled breath?
-      Wilt thou come nearer men?
+See, Thou, these waiting for the hangman’s halter;---\
+&nbsp; &nbsp;These friends of man, must there be given to death?\
+&nbsp; &nbsp; &nbsp; &nbsp; Freedom, we ask again!\
+If in the sacrifice we do not falter,\
+&nbsp; &nbsp;Wilt thou repay us for their strangled breath?\
+&nbsp; &nbsp; &nbsp; &nbsp; Wilt thou come nearer men?\
 Thou wilt, we hope. With groans we give these, then.
 
 The debt is paid!---Thy martyrs lie before us,
