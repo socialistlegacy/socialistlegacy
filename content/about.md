@@ -5,7 +5,7 @@ title: "About"
 
 The legacy of socialism is a legacy of failure. 
 
-Socialism, as an idea and as the movement it inspired, was born in the early 19th century. By the dawn of the 20th century that movement was poised to change the world through international revolution. But the revolution failed.
+Socialism was born in the early 19th century. By the dawn of the 20th century that movement was poised to change the world through international revolution. But the revolution failed.
 
 The world did change, but not for the better. The result of the failed revolution was, [in the words of Rosa Luxemburg](https://www.marxists.org/archive/luxemburg/1915/junius/ch01.htm), the regression of society to barbarism. Capitalism proved not a passing, transitional phase on the way to a higher form of human emancipation that would both complete and transcend the bourgeois revolutionary epoch, but the degeneration of that revolutionary society, its collapse back into the bloody domination of man by man it had presumed to overcome.
 
