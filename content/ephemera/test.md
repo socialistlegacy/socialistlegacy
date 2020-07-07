@@ -1,9 +1,16 @@
 ---
-title: "Test"
+title: "In the Hour of Execution"
 date: 2020-07-06T21:35:29-04:00
 featured_image: "/images/monument.jpg"
 ---
-
+---
+title: "A common plan"
+date: 2019-03-12T17:58
+authors: ["Engels"]
+sources: ["The Principles of Communism"]
+exlink: "https://www.marxists.org/archive/marx/works/1847/11/prin-com.htm"
+tags: ["communism", "cooperation", "Marxism", "socialism", "industry"]
+---
 
 The Agitator, vol. 1, no. 1, November 15, 1910
 
@@ -35,3 +42,5 @@ Freedom, we know thy sun shall yet shine o’er us;\
 &nbsp; &nbsp;And looking up, exalted, thru our tears,\
 &nbsp; &nbsp; &nbsp; &nbsp; We cry, beneath thy star,\
 “Take these! Take us, if need be; thine we are!”
+
+![In the Hour of Execution](images/execution.jpg)
