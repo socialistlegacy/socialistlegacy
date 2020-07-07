@@ -1,13 +1,13 @@
 ---
 title: "A common plan"
-date: 2019-03-12T17:58:29-04:00
+date: 2019-03-12T17:58
 authors: ["Engels"]
 sources: ["The Principles of Communism"]
 exlink: "https://www.marxists.org/archive/marx/works/1847/11/prin-com.htm"
 tags: ["communism", "cooperation", "Marxism", "socialism", "industry"]
 ---
 
-*What will this new social order have to be like?*
+*What will this new social order have to be like?*<!--more-->
 
 Above all, it will have to take the control of industry and of all branches of production out of the hands of mutually competing individuals, and instead institute a system in which all these branches of production are operated by society as a whole – that is, for the common account, according to a common plan, and with the participation of all members of society.
 
