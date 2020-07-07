@@ -50,6 +50,9 @@ a {
     text-decoration: none;
     border-bottom: 1px solid;
 }
+.contains-image { 
+    border: none; 
+}
 abbr {
     text-decoration: none;
     cursor: help;
