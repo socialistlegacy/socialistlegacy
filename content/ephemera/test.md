@@ -7,18 +7,18 @@ featured_image: "/images/monument.jpg"
 
 The Agitator, vol. 1, no. 1, November 15, 1910
 
-In the Hour of Execution.
+In the Hour of Execution.\
 by William Francis Barnard
 
 1887.
-&nbsp; &nbsp
-Is this what we must bear, O Freedom, Mother,
-&nbsp; &nbsp;To see thy face and but to touch thy hand?
-&nbsp; &nbsp; &nbsp; &nbsp; Is there no easier way?
-Must death another take, and yet another,
-   While tears and lamentations thru the land
-      Show the great price we pay?
-Yet, if it must be, Freedom, none say nay.
+
+Is this what we must bear, O Freedom, Mother,\
+&nbsp; &nbsp;To see thy face and but to touch thy hand?\
+&nbsp; &nbsp; &nbsp; &nbsp; Is there no easier way?\
+Must death another take, and yet another,\
+&nbsp; &nbsp;While tears and lamentations thru the land\
+&nbsp; &nbsp; &nbsp; &nbsp; Show the great price we pay?\
+Yet, if it must be, Freedom, none say nay.\
 
 See, Thou, these waiting for the hangman’s halter;---
    These friends of man, must there be given to death?
