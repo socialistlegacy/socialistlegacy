@@ -11,10 +11,10 @@ In the Hour of Execution.
 by William Francis Barnard
 
 1887.
-&nbsp;&nbsp;&nbsp;
+&nbsp; &nbsp
 Is this what we must bear, O Freedom, Mother,
-   To see thy face and but to touch thy hand?
-      Is there no easier way?
+&nbsp; &nbsp;To see thy face and but to touch thy hand?
+&nbsp; &nbsp; &nbsp; &nbsp; Is there no easier way?
 Must death another take, and yet another,
    While tears and lamentations thru the land
       Show the great price we pay?
