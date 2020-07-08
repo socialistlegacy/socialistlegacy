@@ -13,10 +13,6 @@ postsummary = """"""
 featured_image = ""
 +++
 
-
-
-Socialism and Fiction
-
 It is natural that Socialists should favor the novel with a purpose, more especially, the novel that points [to] a Socialist moral. As a reaction against the great bulk of vapid, meaningless, too-clever American fiction, with its artificial plots and characters, remote from actual life, such an attitude is a healthy sign. But it is doubtful whether if the best Socialist novelists were to follow the popular Socialist demand, the result would not be harmful to imaginative literature. The writer of fiction, even if Socialistic, may not be restrained in his work by a theory. He must be free from all preconceived notions, even though they be scientifically true. He must devote himself to the reproduction of life as an impartial observer sees it. The less hampered he is by theories, the more likely he is to see and depict life as it actually is. And this is the most important function of the novelist.
 
 But life in all its complexity does not immediately reveal the Socialist philosophy. Otherwise all honest men would be Socialists. Much study is needed before the truth of Socialism can be understood. Consequently, the novelist who sets forth Socialism in his works is very likely to be didactic. Gorky is a case in point. His best works were written before he had any definite social theories. His sympathies were always with the oppressed. But as long as he remained unacquainted with the Socialist philosophy he merely described the classes with whom he was most familiar and voiced their revolt. His early works were spontaneous and truthful, and immediately produced a profound impression. But when he became a Socialist and transferred Socialism to his art, his fiction lost artistic unity and proper perspective. In “Mother,” for example, the characters are not essential to the dramatic action of the story. They are brought on the stage to further a preconceived idea. In fact, “Mother” is a novel with an idea for its hero instead of a human being. The old form of hero-worship of man has here been turned into the hero-worship of an abstraction.
