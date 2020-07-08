@@ -12,6 +12,7 @@ summaryLength = 1
   author = "authors"
   sources = "sources"
   periodical = "periodical"
+  periodical_issue = "periodical_issue"
   source_date = "source_date"
   genre = "genre"
 

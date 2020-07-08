@@ -65,7 +65,7 @@ abbr {
 }
 img {
     max-width: 800px;
-    max-height: 500px;
+    max-height: 1500px;
 }
 img[src$='#center']
 {
