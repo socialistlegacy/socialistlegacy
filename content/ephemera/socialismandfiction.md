@@ -2,7 +2,7 @@
 date = 2020-07-08T14:48:53-04:00
 title = "Socialism and Fiction"
 draft = false
-authors = [""]
+authors = []
 genres = ["article"]
 tags = ["literature", "art", "socialism", "education"]
 periodicals = ["The Masses"]
