@@ -8,6 +8,7 @@ tags = [""]
 periodical = [""]
 periodical_issue = [""]
 source_date = [""]
-exlink = ""
+exlink = 
 postsummary = """"""
+featured_image = 
 +++
