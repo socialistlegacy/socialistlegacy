@@ -18,7 +18,7 @@ Must death another take, and yet another,\
 Yet, if it must be, Freedom, none say nay.
 
 See, Thou, these waiting for the hangman’s halter;---\
-&nbsp; &nbsp;These friends of man, must there be given to death?\
+&nbsp; &nbsp;These friends of man, must these be given to death?\
 &nbsp; &nbsp; &nbsp; &nbsp; Freedom, we ask again!\
 If in the sacrifice we do not falter,\
 &nbsp; &nbsp;Wilt thou repay us for their strangled breath?\
