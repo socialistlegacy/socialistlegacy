@@ -26,7 +26,7 @@ If in the sacrifice we do not falter,\
 Thou wilt, we hope. With groans we give these, then.
 
 The debt is paid!---Thy martyrs lie before us,\
-&nbsp; &nbsp;Their mute lips speak they words into our ears,\
+&nbsp; &nbsp;Their mute lips speak thy words into our ears,\
 &nbsp; &nbsp; &nbsp; &nbsp; And bid us seek thee far.\
 Freedom, we know thy sun shall yet shine o’er us;\
 &nbsp; &nbsp;And looking up, exalted, thru our tears,\
