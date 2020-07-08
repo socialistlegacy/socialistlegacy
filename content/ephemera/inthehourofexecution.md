@@ -1,21 +1,13 @@
 ---
 title: "In the Hour of Execution"
 date: 2020-07-06T21:35:29-04:00
-featured_image: "/images/monument.jpg"
 authors: ["William Francis Barnard"]
-periodical: ["The Agitator v1n01"]
+periodical: ["The Agitator, vol. 1, no. 1, November 15, 1910"]
 source_date: ["1887", "1910", "1910-11"]
-genre: ["poetry", "drawing"]
+genre: ["poetry"]
 exlink: "https://www.marxists.org/history/usa/pubs/agitator/v1n01-nov-15-1910-agitator.pdf"
 tags: ["freedom", "death", "Haymarket martyrs"]
 ---
-
-The Agitator, vol. 1, no. 1, November 15, 1910
-
-In the Hour of Execution.\
-by William Francis Barnard
-
-1887.
 
 Is this what we must bear, O Freedom, Mother,\
 &nbsp; &nbsp;To see thy face and but to touch thy hand?\
@@ -40,5 +32,7 @@ Freedom, we know thy sun shall yet shine o’er us;\
 &nbsp; &nbsp;And looking up, exalted, thru our tears,\
 &nbsp; &nbsp; &nbsp; &nbsp; We cry, beneath thy star,\
 “Take these! Take us, if need be; thine we are!”
+
+1887.
 
 ![In the Hour of Execution](/images/execution.jpg)
