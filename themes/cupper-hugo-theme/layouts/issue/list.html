@@ -1,0 +1,34 @@
+{{ define "main" }}
+  <main id="main">
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+    {{ $p := index (split .Title ",") 0 }}
+    <h4>See more from <a href="/periodicals/{{ $p | urlize }}"><em>{{ print $p }}</em></a></h4>
+    <ul class="patterns-list">
+    {{ range .Pages.ByPublishDate.Reverse }}
+      <li>
+        <h2>
+          <a href="{{ .Permalink }}">
+            {{ .Title }} {{ with .Params.authors }}&mdash;
+          {{ range . }}
+              {{ $href := print ("authors/" | absLangURL) (. | urlize) "/" }}
+              <a href="{{ $href }}">{{ . }}</a>
+          {{ end }}
+    {{ end }}
+
+          </a>
+        </h2>
+        <a href="{{ .RelPermalink }}">
+    {{ with .Params.featured_image }}<img src="{{ . }}#center" style="max-width:35%">{{ end }}
+
+        {{ if .Params.postsummary }}
+        {{ .Params.postsummary | markdownify }}
+        {{ else }}
+        {{ .Summary }}
+        {{ end}}</a>
+
+      </li>        
+    {{ end }}
+    </ul>
+  </main>
+{{ end }}

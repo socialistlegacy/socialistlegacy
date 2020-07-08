@@ -17,13 +17,13 @@
         </ul>
       </div>
     {{ end }}
-    {{ with .Params.periodical_issue }}
+    {{ with .Params.issues }}
       <div class="tags">
         <strong aria-hidden="true">Source: </strong>
         <ul aria-label="tags">
           {{ range . }}
             <li>
-              {{ $href := print ("periodical_issue/" | absLangURL) (. | urlize) "/" }}
+              {{ $href := print ("issues/" | absLangURL) (. | urlize) "/" }}
               <a href="{{ $href }}">{{ . }}</a>
             </li>
           {{ end }}

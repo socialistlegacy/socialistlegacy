@@ -10,10 +10,11 @@ summaryLength = 1
 [taxonomies]
   tag = "tags"
   author = "authors"
-  sources = "sources"
+  authors-sorted-alphabetically = "authors sorted alphabetically"
+  source = "sources"
   periodical = "periodicals"
-  periodical_issue = "periodical_issue"
-  source_date = "dates"
+  issue = "issues"
+  source-date = "source dates"
   genre = "genres"
 
 [permalinks]

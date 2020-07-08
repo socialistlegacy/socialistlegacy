@@ -5,9 +5,9 @@ draft = false
 authors = ["D. Wilkins"]
 genre = ["poetry"]
 tags = ["freedom", "labor", "slavery"]
-periodical = ["Voice of Industry"]
-periodical_issue = ["Voice of Industry vol. 1, no. 1, May 29, 1845"]
-source_date = ["1845", "1845-05"]
+periodicals = ["Voice of Industry"]
+issues = ["Voice of Industry vol. 1, no. 1, May 29, 1845"]
+source-dates = ["1845", "1845-05"]
 exlink = "https://www.marxists.org/history/usa/pubs/voice-of-industry/1845/v1n01-w001-may-29-1845-voi.pdf"
 postsummary = """"""
 +++
