@@ -10,11 +10,11 @@ tags: ["regression"]
 
 1\.
 
-Indeed I live in the dark ages!<!--more-->\
+Indeed I live in the dark ages!\
 A guileless word is an absurdity. A smooth forehead betokens\
 A hard heart. He who laughs\
 Has not yet heard\
-The terrible tidings.
+The terrible tidings.<!--more-->
 
 Ah, what an age it is\
 When to speak of trees is almost a crime\

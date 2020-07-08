@@ -1,10 +1,11 @@
-baseURL = "https://socialistlegacy.github.io/"
+baseURL = "https://socialistlegacy.com/"
 languageCode = "en-us"
 defaultContentLanguage = "en"
 title = "The Socialist Legacy"
 theme = "cupper-hugo-theme"
 googleAnalytics = "UA-123456789-1"
 disqusShortname = "yourdiscussshortname"
+summaryLength = 1
 
 [taxonomies]
   tag = "tags"

@@ -9,7 +9,7 @@ exlink: "https://www.marxists.org/history/usa/pubs/agitator/v1n01-nov-15-1910-ag
 tags: ["freedom", "death", "Haymarket martyrs"]
 ---
 
-Is this what we must bear, O Freedom, Mother,<!--more-->\
+Is this what we must bear, O Freedom, Mother,\
 &nbsp; &nbsp;To see thy face and but to touch thy hand?\
 &nbsp; &nbsp; &nbsp; &nbsp; Is there no easier way?\
 Must death another take, and yet another,\
