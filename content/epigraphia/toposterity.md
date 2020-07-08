@@ -1,11 +1,16 @@
----
-date: "2019-03-12"
-tags: ["poetry"]
-title: "To Posterity"
-authors: ["Brecht"]
-tags: ["regression"]
++++
+date = "2019-03-12"
+genre = ["poetry"]
+title = "To Posterity"
+authors = ["Brecht"]
+tags = ["regression"]
+postsummary = """Indeed I live in the dark ages!  
+A guileless word is an absurdity. A smooth forehead betokens  
+A hard heart. He who laughs  
+Has not yet heard  
+The terrible tidings."""
 
----
++++
 
 
 1\.
@@ -14,7 +19,7 @@ Indeed I live in the dark ages!\
 A guileless word is an absurdity. A smooth forehead betokens\
 A hard heart. He who laughs\
 Has not yet heard\
-The terrible tidings.<!--more-->
+The terrible tidings.
 
 Ah, what an age it is\
 When to speak of trees is almost a crime\

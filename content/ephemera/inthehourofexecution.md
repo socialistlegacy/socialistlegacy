@@ -16,7 +16,7 @@ Is this what we must bear, O Freedom, Mother,\
 Must death another take, and yet another,\
 &nbsp; &nbsp;While tears and lamentations thru the land\
 &nbsp; &nbsp; &nbsp; &nbsp; Show the great price we pay?\
-Yet, if it must be, Freedom, none say nay.
+Yet, if it must be, Freedom, none say nay.<!--more-->
 
 See, Thou, these waiting for the hangman’s halter;---\
 &nbsp; &nbsp;These friends of man, must these be given to death?\
