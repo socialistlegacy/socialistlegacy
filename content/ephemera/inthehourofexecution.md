@@ -2,7 +2,7 @@
 title: "In the Hour of Execution"
 date: 2020-07-06T21:35:29-04:00
 featured_image: "/images/monument.jpg"
-authors: ["Barnard, William Francis"]
+authors: ["William Francis Barnard"]
 periodical: ["The Agitator v1n01"]
 source_date: ["1887", "1910", "1910-11"]
 genre: ["poetry", "drawing"]
