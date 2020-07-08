@@ -2,14 +2,12 @@
 title: "In the Hour of Execution"
 date: 2020-07-06T21:35:29-04:00
 featured_image: "/images/monument.jpg"
----
----
-title: "A common plan"
-date: 2019-03-12T17:58
-authors: ["Engels"]
-sources: ["The Principles of Communism"]
-exlink: "https://www.marxists.org/archive/marx/works/1847/11/prin-com.htm"
-tags: ["communism", "cooperation", "Marxism", "socialism", "industry"]
+authors: ["Barnard, William Francis"]
+periodical: ["The Agitator v1n01"]
+source_date: ["1887", "1910", "1910-11"]
+genre: ["poetry", "drawing"]
+exlink: "https://www.marxists.org/history/usa/pubs/agitator/v1n01-nov-15-1910-agitator.pdf"
+tags: ["freedom", "death", "Haymarket martyrs"]
 ---
 
 The Agitator, vol. 1, no. 1, November 15, 1910
