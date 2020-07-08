@@ -10,6 +10,9 @@ disqusShortname = "yourdiscussshortname"
   tag = "tags"
   author = "authors"
   sources = "sources"
+  periodical = "periodical"
+  source_date = "source_date"
+  genre = "genre"
 
 [permalinks]
   post = "/:filename/"
@@ -18,7 +21,7 @@ disqusShortname = "yourdiscussshortname"
   quality = 99
 
 [params]
-  description = "&nbsp;&nbsp;The Socialist Legacy"
+  description = "The Socialist Legacy"
   # For more date formats see https://gohugo.io/functions/format/
   dateFormat = "Jan 2, 2006"
   codePenUser = "someUser"
