@@ -3,12 +3,12 @@ date = {{ .Date }}
 title = "{{ replace .Name "-" " " | title }}"
 draft = true
 authors = [""]
-genre = [""]
+genres = [""]
 tags = [""]
-periodical = [""]
-periodical_issue = [""]
+periodicals = [""]
+issues = [""]
 source_date = [""]
-exlink = 
+exlink = ""
 postsummary = """"""
-featured_image = 
+featured_image = ""
 +++
