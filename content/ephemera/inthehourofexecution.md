@@ -41,4 +41,4 @@ Freedom, we know thy sun shall yet shine o’er us;\
 &nbsp; &nbsp; &nbsp; &nbsp; We cry, beneath thy star,\
 “Take these! Take us, if need be; thine we are!”
 
-![In the Hour of Execution](images/execution.jpg)
+![In the Hour of Execution](/images/execution.jpg)
