@@ -2,11 +2,12 @@
 date = {{ .Date }}
 title = "{{ replace .Name "-" " " | title }}"
 draft = true
-authors = [""]
+authors = []
 genres = [""]
 tags = [""]
-periodicals = [""]
-issues = [""]
+periodicals = []
+sources = []
+issues = []
 source_date = [""]
 exlink = ""
 postsummary = """"""
