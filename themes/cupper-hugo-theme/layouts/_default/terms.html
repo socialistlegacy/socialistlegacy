@@ -10,7 +10,7 @@
         <li>
           <h2>
             <a href="{{ .Permalink }}">
-              {{ printf "(%d) %s" $count $name }}
+              {{ printf "%s (%d)" .Title $count }}
             </a>
           </h2>
         </li>

@@ -11,10 +11,10 @@ summaryLength = 1
   tag = "tags"
   author = "authors"
   sources = "sources"
-  periodical = "periodical"
+  periodical = "periodicals"
   periodical_issue = "periodical_issue"
-  source_date = "source_date"
-  genre = "genre"
+  source_date = "dates"
+  genre = "genres"
 
 [permalinks]
   post = "/:filename/"
