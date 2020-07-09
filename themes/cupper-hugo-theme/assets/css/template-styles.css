@@ -407,8 +407,9 @@ caption {
     line-height: 1.125;
     list-style: none;
 }
+/* This changes the sidebar menu spacing */
 .patterns li + li {
-    margin-top: 0.75rem;
+    margin-top: 0.5rem;
 }
 .patterns ul ul {
     margin-left: 0.75rem;
@@ -419,7 +420,7 @@ caption {
     flex-wrap: nowrap;
     align-items: baseline;
     font-weight: bold;
-    padding: 0 1rem;
+    padding: 0 2rem;
 }
 .pattern a:focus {
     outline: none;
@@ -487,7 +488,7 @@ caption {
 }
 .patterns-list a {
     border: 0;
-}
+}   
 
 /* Tags */
 .tags {
