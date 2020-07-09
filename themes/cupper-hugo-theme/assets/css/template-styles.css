@@ -64,8 +64,8 @@ abbr {
     border-bottom: 1px dashed;
 }
 img {
-    max-width: 800px;
-    max-height: 1600px;
+    max-width: 400px;
+    max-height: 900px;
 }
 img[src$='#center']
 {

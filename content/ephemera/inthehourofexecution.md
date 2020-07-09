@@ -37,4 +37,4 @@ Freedom, we know thy sun shall yet shine o’er us;\
 
 1887.
 
-![In the Hour of Execution](/images/execution.jpg)
+[![In the Hour of Execution](/images/execution.jpg)](/images/execution.jpg)
