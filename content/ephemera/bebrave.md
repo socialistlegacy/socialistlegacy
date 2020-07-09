@@ -21,6 +21,6 @@ When a deep dark cloud is passing\
 Don’t give way to fear and fretting,\
 &nbsp; &nbsp; All your care-free calm forgetting,\
 But prepare to meet the blow\
-&nbsp; &nbsp; Ere the shadows deeper grow.\
+&nbsp; &nbsp; Ere the shadows deeper grow.
 
 ![Be Brave](/images/bebrave.jpg)
