@@ -60,7 +60,7 @@ When hunger ruled.\
 I came among men in a time of uprising\
 And I revolted with them.\
 So the time passed away\
-Which on earth was given me.\
+Which on earth was given me.
 
 I ate my food between massacres.\
 The shadow of murder lay upon my sleep.\
@@ -88,7 +88,7 @@ That brought them forth.
 
 For we went, changing our country more often than our shoes.\
 In the class war, despairing\
-When there was only injustice and no resistance.\
+When there was only injustice and no resistance.
 
 For we knew only too well:\
 Even the hatred of squalor\
