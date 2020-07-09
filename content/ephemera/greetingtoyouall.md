@@ -48,4 +48,4 @@ How do we propose to change the system? We have no scheme for that purpose. The 
 
 With this partial outline of its purpose *The Agitator* presents itself to the students of toil and the comrades of freedom for their approval or indifference. We will be glad to hear from all who have an opinion and the interest to pen it.
 
-![Greeting to You All](/images/agitator-greeting.jpg)
+[![Greeting to You All](/images/agitator-greeting.jpg)](/images/agitator-greeting.jpg)

@@ -16,7 +16,7 @@
           </a>
         </h2>
     <a href="{{ .RelPermalink }}">   
-    {{ with .Params.featured_image }}<img src="{{ . }}" style="max-width:35%">{{ end }}
+    {{ with .Params.featured_image }}<img src="{{ . }}" style="max-width:400px;max-height:700px">{{ end }}
         {{ if .Params.postsummary }}
         {{ .Params.postsummary | markdownify }}
         {{ else }}
