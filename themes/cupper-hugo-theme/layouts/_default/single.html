@@ -1,7 +1,7 @@
 {{ define "main" }}
   <main id="main">
     <h1>{{ .Title }}</h1>
-    <br />{{ with .Params.featured_image }}<a href="{{ . }}" class="img-link"><img src="{{ . }}" style="max-height:500px;max-width:800px"></a>{{ end }}
+    <br />{{ with .Params.featured_image }}<a href="{{ . }}" class="img-link"><img src="{{ . }}" style="max-height:700;max-width:800px"></a>{{ end }}
     {{ .Content }}
   </main>
 {{ end }}
