@@ -31,7 +31,7 @@
       </div>
     {{ end }}
 
-    <br />{{ with .Params.featured_image }}<a href="{{ . }}" class="img-link"><img src="{{ . }}" style="max-height:700px;max-width:400px"></a>{{ end }}
+    <br />{{ with .Params.featured_image }}<a href="{{ . }}" class="img-link"><img src="{{ . }}" style="max-height:700px;max-width:350px"></a>{{ end }}
     {{ if ne .Params.toc false }}
       {{ partial "toc" . }}
     {{ end }}
