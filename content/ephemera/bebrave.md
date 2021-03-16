@@ -24,4 +24,4 @@ Don’t give way to fear and fretting,\
 But prepare to meet the blow\
 &nbsp; &nbsp; Ere the shadows deeper grow.
 
-[![Be Brave](/images/bebrave.jpg)](/images/bebrave.jpg)
+<a href="/images/bebrave.jpg" class="img-link">![Be Brave](/images/bebrave.jpg)</a>

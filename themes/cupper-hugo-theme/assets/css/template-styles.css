@@ -357,7 +357,10 @@ caption {
 }
 .logo img {
     width: 100%;
-    max-width: 12rem;
+    max-width: 10rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 .library-desc {
     font-size: 1rem;
@@ -391,7 +394,7 @@ caption {
 
 /* Patterns navigation */
 .patterns {
-    overflow: auto;
+    overflow: visible;
     margin-top: 1.5rem;
 }
 .patterns * {
