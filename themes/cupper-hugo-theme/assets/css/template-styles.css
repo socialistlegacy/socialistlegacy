@@ -575,6 +575,7 @@ main {
     display: block;
     counter-reset: fig;
     min-height: 100vh;
+    text-align: justify;
 }
 figcaption::before {
     counter-increment: fig;
