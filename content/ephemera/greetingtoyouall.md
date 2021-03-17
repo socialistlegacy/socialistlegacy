@@ -9,7 +9,7 @@ genres: ["article"]
 exlink: "https://www.marxists.org/history/usa/pubs/agitator/v1n01-nov-15-1910-agitator.pdf"
 tags: ["freedom", "freedom of speech", "industrial unionism", "Haymarket martyrs", "education", "scientific socialism", "syndicalism", "anarchism"]
 ---
-
+{{< justify >}}
 *The Agitator*, long hoped for by many and never expected by some, makes its entrance into the world on this memorable date---Nov. 11---a date that will go down in the labor history of America as recording the most important event in the nineteenth century.<!--more-->
 
 The publishers are glad to commemorate the twenty-fifth anniversary of the Chicago martyrdom by the publication of a paper that stands for the freedom throttled by Gary and his co-conspirators Nov. 11, 1887.
@@ -48,4 +48,6 @@ How do we propose to change the system? We have no scheme for that purpose. The 
 
 With this partial outline of its purpose *The Agitator* presents itself to the students of toil and the comrades of freedom for their approval or indifference. We will be glad to hear from all who have an opinion and the interest to pen it.
 
-[![Greeting to You All](/images/agitator-greeting.jpg)](/images/agitator-greeting.jpg)
+{{< /justify >}}
+{{< imglink "/images/agitator-greeting.jpg" >}}
+

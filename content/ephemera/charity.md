@@ -15,4 +15,4 @@ featured_image = ""
 
 People who give to the poor never seem to see that their charity is just as humiliating to themselves as to the recipients of it.
 
-[![Charity](/images/charity.jpg)](/images/charity.jpg)
+{{< imglink "/images/charity.jpg" >}}

@@ -1,0 +1,103 @@
+
+Link to:
+- instagram Posts
+- reddit pages
+
+About page
+- include description of different sections
+
+Select, list, prepare
+- ephemera
+- epigraphia
+- embers
+
+On all list pages:
+- include publication, vol, no, date
+- Promote patreon?
+
+Sources for epigraphia
+
+Headings for epigraphia and ephemera
+
+tag:
+author:
+authors-sorted-alphabetically:
+book:
+periodical:
+volume:
+issue:
+date:
+year:
+month:
+genre:
+
+
+
+Sources
+- books
+- periodicals
+
+Page for publications (periodicals)
+- sort by count (default)
+- sort alphabetical/reverse
+- sort by date of first publication
+
+Page for each publication
+- header with info
+- sort by publishdate (ascending/descending)
+- sort by date (ascending/descending)
+- publication archive - by vol and no (with date)
+- Use masthead
+
+Page for authors
+- sort by count (default)
+- sort alphabetical/reverse
+
+Page for each author
+- header with info
+- sort by publication (date ascending/descending)
+- sort by title (alphabetical/reverse, date ascending/descending)
+
+Page for genres
+- termlist of genres
+
+Page for each genre
+- sort by publishdate (default)
+- sort by date
+- sort by author 
+- sort by publication
+
+Archive - by year and month
+- https://discourse.gohugo.io/t/how-to-generate-chronological-blog-archives-in-hugo/13491
+
+Site search
+- https://craftweeks.com/en/set-google-custom-search-on-amp-static-sites/
+
+
+Posts for:
+- Youtube videos/soundcloud
+- original thoughts - Embers
+
+
+Podcast (in nav menu)
+- posts with each video/audio
+- header with podcast link, link to channels
+
+
+Manage social media
+- https://buffer.com/library/social-media-management-tools/
+
+PDF library
+
+Substack - weekly email digest
+
+Music
+- Rebel Songbook
+- Big Red Songbook (Kindle)
+
+Publications (books to print)
+Merch (buttons, tshirts, mugs, etc)
+
+
+
+

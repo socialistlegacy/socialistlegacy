@@ -15,8 +15,6 @@ featured_image = ""
 slug = "brave"
 +++
 
-test
-
 When a deep dark cloud is passing\
 &nbsp; &nbsp; Herald of the storm that’s massing;\
 Don’t give way to fear and fretting,\
@@ -24,4 +22,5 @@ Don’t give way to fear and fretting,\
 But prepare to meet the blow\
 &nbsp; &nbsp; Ere the shadows deeper grow.
 
-<a href="/images/bebrave.jpg" class="img-link">![Be Brave](/images/bebrave.jpg)</a>
+
+{{< imglink "/images/bebrave.jpg" >}}

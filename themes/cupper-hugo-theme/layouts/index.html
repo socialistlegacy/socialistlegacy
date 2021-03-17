@@ -12,17 +12,27 @@
               <a href="{{ $href }}">{{ . }}</a>
           {{ end }}
     {{ end }}
-
-          </a>
         </h2>
+        {{ with .Params.issues }}<div class="tags">
+          <ul aria-label="tags">
+            {{ range . }}
+              <li>
+                {{ $href := print ("issues/" | absLangURL) (. | urlize) "/" }}
+                <a href="{{ $href }}">{{ . }}</a>
+              </li>
+            {{ end }}
+          </ul>
+        </div>{{ end }}      
+    
     <a href="{{ .RelPermalink }}">   
-    {{ with .Params.featured_image }}<img src="{{ . }}" style="max-width:330px;max-height:700px">{{ end }}
-        {{ if .Params.postsummary }}
+    {{ with .Params.featured_image }}<img src="{{ . }}" style="max-width:330px;max-height:700px;margin-top:1em">{{ end }}
+    <div style="margin-top:1em;text-align:justify">
+    {{ if .Params.postsummary }}
         {{ .Params.postsummary | markdownify }}
         {{ else }}
         {{ .Summary }}
         {{ end}}</a>
-
+    </div>
       </li>        
     {{ end }}
     </ul>

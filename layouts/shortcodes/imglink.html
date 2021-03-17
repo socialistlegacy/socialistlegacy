@@ -1,0 +1,2 @@
+<p><a href="{{ .Get 0 }}" class="img-link"><img src="{{ .Get 0 }}" {{ if or (.Get "alt") (.Get "caption") }}alt="{{ with .Get "alt"}}{{.}}{{else}}{{ .Get "caption" }}{{ end }}"{{ end }} /></a></p>
+

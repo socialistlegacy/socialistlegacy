@@ -32,4 +32,4 @@ Be this our motto evermore\
 That glorious Being we adore\
 &nbsp; &nbsp;Ne’er made nor own’d a slave.
 
-[![To the Workingmen](/images/totheworkingmen.jpg)](/images/totheworkingmen.jpg)
+{{< imglink "/images/totheworkingmen.jpg" >}}

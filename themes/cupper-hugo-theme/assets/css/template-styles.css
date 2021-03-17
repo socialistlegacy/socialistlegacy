@@ -564,7 +564,7 @@ caption {
 
 /* Figures */
 figure {
-    text-align: center;
+    text-align: left;
 }
 figcaption {
     font-size: 0.85rem;
@@ -575,7 +575,7 @@ main {
     display: block;
     counter-reset: fig;
     min-height: 100vh;
-    text-align: justify;
+   /* text-align: justify; */
 }
 figcaption::before {
     counter-increment: fig;
