@@ -17,19 +17,36 @@
         </ul>
       </div>
     {{ end }}
-    {{ with .Params.issues }}
+    {{ with .Params.periodicals }}
       <div class="tags">
-        <strong aria-hidden="true">Source: </strong>
         <ul aria-label="tags">
           {{ range . }}
-            <li>
-              {{ $href := print ("issues/" | absLangURL) (. | urlize) "/" }}
-              <a href="{{ $href }}">{{ . }}</a>
-            </li>
+              {{ $href := print ("periodicals/" | absLangURL) (. | urlize) "/" }}
+              <b>Source: </b><a href="{{ $href }}" class="source">{{ . }}</a>,
           {{ end }}
         </ul>
-      </div>
     {{ end }}
+    {{ with .Params.volumes }}
+        <ul aria-label="tags">
+          {{ range . }}
+              {{ $href := print ("volumes/" | absLangURL) (. | urlize) "/" }}
+              <a class="source" href="{{ $href }}">Vol. {{ . }}</a>,
+          {{ end }}
+        </ul>
+    {{ end }}
+    {{ with .Params.issues }}
+        <ul aria-label="tags">
+          {{ range . }}
+              {{ $href := print ("issues/" | absLangURL) (. | urlize) "/" }}
+              <a class="source" href="{{ $href }}">No. {{ . }}</a>,
+          {{ end }}
+        </ul>
+    {{ end }}
+        {{ $dateFormat := $.Site.Params.dateFormat | default "January 2, 2006" }}
+        {{ $publishDate := .Date }}
+        {{ $publishDate.Format $dateFormat }}
+      </div>
+
 
     <br />{{ with .Params.featured_image }}<a href="{{ . }}" class="img-link"><img src="{{ . }}" style="max-height:700px;max-width:350px"></a>{{ end }}
     {{ if ne .Params.toc false }}

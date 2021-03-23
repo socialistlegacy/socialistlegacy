@@ -12,13 +12,20 @@ summaryLength = 1
   author = "authors"
   authors-sorted-alphabetically = "authors sorted alphabetically"
   source = "sources"
-  periodical = "periodicals"
-  issue = "issues"
   source-date = "source dates"
   genre = "genres"
+  year = "year"
+  month = "month"
+  book = "books"
+  periodical = "periodicals"
+  volume = "volume"
+  issue = "issues"
+
 
 [permalinks]
-  post = "/:filename/"
+  post = "/post/:year/:month/:slug"
+  year = "/post/:slug"
+  month = "/post/:slug"
 
 [imaging]
   quality = 99
@@ -26,7 +33,7 @@ summaryLength = 1
 [params]
   description = "The Socialist Legacy"
   # For more date formats see https://gohugo.io/functions/format/
-  dateFormat = "Jan 2, 2006"
+  dateFormat = "January 2, 2006"
   codePenUser = "someUser"
   mainSections = ["epigraphia", "ephemera"]
 
