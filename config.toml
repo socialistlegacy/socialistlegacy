@@ -19,13 +19,15 @@ summaryLength = 1
   book = "books"
   periodical = "periodicals"
   volume = "volume"
-  issue = "issues"
+  issue = "issue"
 
 
 [permalinks]
-  post = "/post/:year/:month/:slug"
-  year = "/post/:slug"
-  month = "/post/:slug"
+  year = "/date/:slug"
+  month = "/date/:slug"
+  periodicals = "/periodicals/:title"
+  volume = "/periodicals/:title"
+  issue = "/periodicals/:title"
 
 [imaging]
   quality = 99

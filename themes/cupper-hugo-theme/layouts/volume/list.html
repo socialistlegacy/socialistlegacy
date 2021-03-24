@@ -1,13 +1,16 @@
 {{ define "main" }}
   <main id="main">
     <h1><a class="source" href="/periodicals/{{ index (split .Title "/") 0 }}">{{ replace (index (split .Title "/") 0) "-" " " | title }}</a></h1>
-    <h3 style="margin:1em 0 0 .5em">
-      <a class="source" href="/periodicals/{{ index (split .Title "/n") 0 }}">Vol. {{ index (split (index (split .Title "/v") 1) "/n") 1 }}</a>, No. 
-      {{ index (split .Title "/n") 1 }}
-    </h3>
+    <h3 style="margin:1em 0 0 .5em">Vol. {{ replace (index (split .Title "/v") 1) "-" " " | title }}</h3>
     {{ .Content }}
     {{ $per := (index (split .Title "/") 0) | urlize }}
-
+<ul style="margin-top:.2em">
+      {{ range $iss, $pages := .Site.Taxonomies.issue }}
+      {{ if in $iss $per }}
+      <li><a class="source" href="{{ "/periodicals/" | relLangURL }}{{ $iss | urlize }}">No. {{ index (split $iss "/n") 1}}</a></li>
+      {{ end }}
+      {{ end }}
+</ul>
 
     <ul class="patterns-list">
     {{ range .Pages.ByPublishDate.Reverse }}

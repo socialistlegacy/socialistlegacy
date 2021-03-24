@@ -1,11 +1,14 @@
 ---
 title: "In the Hour of Execution"
-date: 2020-07-06T21:35:29-04:00
+publishdate: 2020-07-06T21:35:29-04:00
 authors: ["William Francis Barnard"]
 authors sorted alphabetically: ["Barnard, William Francis"]
 periodicals: ["The Agitator"]
-issues: ["The Agitator, vol. 1, no. 1, November 15, 1910"]
-source dates: ["1887", "1910", "1910-11"]
+volume: ["the-agitator/v01"]
+issue: ["the-agitator/v01/n01"]
+date: 1910-11-15
+year: ["1910"]
+month: ["1910/11"]
 genres: ["poetry"]
 exlink: "https://www.marxists.org/history/usa/pubs/agitator/v1n01-nov-15-1910-agitator.pdf"
 tags: ["freedom", "death", "Haymarket martyrs"]

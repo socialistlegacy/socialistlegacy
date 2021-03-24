@@ -1,6 +1,14 @@
 {{ define "main" }}
   <main id="main">
-    <h1>{{ .Title }}</h1>
+   {{ if not (in .Title "/") }}
+   {{ else }} 
+    {{ $month := index (split .Title "/") 1 }}
+    {{ $year := index (split .Title "/") 0 }}
+    {{ $date := dateFormat "January 2006" (print $year "-" $month "-01") }}
+    {{ $tmonth := index (split $date " ") 0 }}
+    {{ $tyear := index (split $date " ") 1 }}
+    <h1>{{ $tmonth }} <a class="source" href="/date/{{ $year }}">{{ $tyear }}</a></h1>
+    {{ end }}
     <ul class="patterns-list">
     {{ range .Pages.ByPublishDate.Reverse }}
       <li>
@@ -13,9 +21,16 @@
           {{ end }}
     {{ end }}
         </h2>
-    <div class="tags">
-      {{ partial "periodical.html" . }}
-    </div>     
+    {{ with .Params.issues }}<div class="tags">
+      <ul aria-label="tags">
+        {{ range . }}
+          <li>
+            {{ $href := print ("issues/" | absLangURL) (. | urlize) "/" }}
+            <a href="{{ $href }}">{{ . }}</a>
+          </li>
+        {{ end }}
+      </ul>
+    </div>{{ end }}      
     <a href="{{ .RelPermalink }}">   
     {{ with .Params.featured_image }}<img src="{{ . }}" style="max-width:330px;max-height:700px;margin-top:1em">{{ end }}
     <div style="margin-top:1em;text-align:justify">

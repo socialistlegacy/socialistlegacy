@@ -1,0 +1,41 @@
+{{ with .Params.periodicals }}
+  <ul aria-label="tags">
+    {{ range . }}
+        {{ $href := print ("periodicals/" | absLangURL) (. | urlize) "/" }}
+        <a href="{{ $href }}" class="source">{{ . }}</a>,
+    {{ end }}
+  </ul>
+{{ end }}
+{{ with .Params.volume }}
+  <ul aria-label="tags">
+    {{ range . }}
+        {{ $href := print ("periodicals/" | absLangURL) (. | urlize) "/" }}
+      <a class="source" href="{{ $href }}">Vol. {{ index (split . "/v") 1 }}</a>,
+    {{ end }}
+  </ul>
+{{ end }}
+{{ with .Params.issue }}
+  <ul aria-label="tags">
+    {{ range . }}
+        {{ $href := print ("periodicals/" | absLangURL) (. | urlize) "/" }}
+        <a class="source" href="{{ $href }}">No. {{ index (split . "/n") 1 }}</a>,
+    {{ end }}
+  </ul>
+{{ end }}
+{{ $month := .Date.Format "January" }}
+{{ $day := .Date.Format "2," }} 
+{{ $year := .Date.Format "2006" }}
+
+
+{{ with .Params.month }}
+    {{ range . }}
+        {{ $href := print ("date/" | absLangURL) (. | urlize) "/" }}
+   <a class="source" href="{{ $href }}">{{ $month }}</a> {{ $day }}
+    {{ end }}
+{{ end }}
+{{ with .Params.year }}
+    {{ range . }}
+        {{ $href := print ("date/" | absLangURL) (. | urlize) "/" }}
+   <a class="source" href="{{ $href }}">{{ $year }}</a>
+    {{ end }}
+{{ end }}

@@ -1,13 +1,16 @@
 +++
-date = 2020-07-08T14:48:53-04:00
+publishdate = 2020-07-08T14:48:53-04:00
 title = "Socialism and Fiction"
 draft = false
 authors = []
 genres = ["article"]
 tags = ["literature", "art", "socialism", "education"]
 periodicals = ["The Masses"]
-issues = ["The Masses, vol. 1, no. 2, February 1911"]
-source_date = ["1911"]
+volume = ["the-masses/v01"]
+issue = ["the-masses/v01/n02"]
+year = ["1911"]
+month = ["1911/02"]
+date = 1911-02-01
 exlink = "https://www.marxists.org/history/usa/pubs/masses/issues/tamiment/t02-v01n02-feb-1911.pdf"
 postsummary = """"""
 featured_image = ""

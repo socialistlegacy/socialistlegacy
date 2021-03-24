@@ -1,5 +1,5 @@
 +++
-date = 2020-07-09T00:24:44.000Z
+publishdate = 2020-07-09T00:24:44.000Z
 title = "Be Brave"
 draft = false
 authors = [ "John E. Nordquist" ]
@@ -7,12 +7,14 @@ genres = [ "poetry" ]
 tags = [ "regression", "crisis" ]
 periodicals = [ "Industrial Pioneer" ]
 sources = [ ]
-issues = [ "Industrial Pioneer, vol. 1, no. 1, February 1921" ]
-source_date = [ "1921", "1921-02" ]
+volume = ["industrial-pioneer/v01"]
+issue = [ "industrial-pioneer/v01/n01" ]
+date = 1921-02-20
+month = ["1921/02"]
+year = ["1921"]
 exlink = "https://www.marxists.org/history/usa/pubs/industrial-pioneer/Industrial%20Pioneer%20(February%201921).pdf"
 postsummary = "When a deep dark cloud is passing..."
 featured_image = ""
-slug = "brave"
 +++
 
 When a deep dark cloud is passing\

@@ -1,32 +1,40 @@
 {{ define "main" }}
   <main id="main">
     <h1>{{ .Title }}</h1>
+    {{ .Content }}
+    {{ $per := .Title | urlize }}
+<ul>
+      {{ range $vol, $pages := .Site.Taxonomies.volume }}
+      {{ if in $vol $per }}
+      <li><a href="{{ "/periodicals/" | relLangURL }}{{ $vol | urlize }}">Vol. {{ index (split $vol "v") 1}}</a></li>
+      {{ end }}
+      {{ end }}
+</ul>
+
     <ul class="patterns-list">
     {{ range .Pages.ByPublishDate.Reverse }}
       <li>
         <h2>
           <a href="{{ .Permalink }}">
-            {{ .Title }}</a> {{ with .Params.authors }}&mdash;
+            {{ .Title }} {{ with .Params.authors }}&mdash;
           {{ range . }}
               {{ $href := print ("authors/" | absLangURL) (. | urlize) "/" }}
               <a href="{{ $href }}">{{ . }}</a>
           {{ end }}
     {{ end }}
+
+          </a>
         </h2>
-    <div class="tags">
-      {{ partial "periodical.html" . }}
-    </div>     
-    <a href="{{ .RelPermalink }}">   
-    {{ with .Params.featured_image }}<img src="{{ . }}" style="max-width:330px;max-height:700px;margin-top:1em">{{ end }}
-    <div style="margin-top:1em;text-align:justify">
+        <a href="{{ .RelPermalink }}">
+    {{ with .Params.featured_image }}<img src="{{ . }}" style="max-width:330px;max-height:700px">{{ end }}
+
         {{ if .Params.postsummary }}
         {{ .Params.postsummary | markdownify }}
         {{ else }}
         {{ .Summary }}
-        {{ end}}
-    </div>
-</a>
-  </li>        
+        {{ end}}</a>
+
+      </li>        
     {{ end }}
     </ul>
   </main>

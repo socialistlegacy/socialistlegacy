@@ -1,13 +1,16 @@
 +++
-date = 2020-07-08T19:21:31-04:00
+publishdate = 2020-07-08T19:21:31-04:00
 title = "Charity"
 draft = false
 authors = []
 genres = ["aphorism"]
 tags = ["charity"]
 periodicals = ["Good Morning"]
-issues = ["Good Morning, vol. 1 no. 1, May 8, 1919"]
-source_date = ["1919", "1919-05"]
+date = 1919-05-08
+volume = ["good-morning/v01"]
+issue = ["good-morning/v01/n01"]
+month = ["1919/05"]
+year = ["1919"]
 exlink = "https://www.marxists.org/history/usa/culture/pubs/goodmorning/1919/v1n01-may-08-1919-good-morning.pdf"
 postsummary = """"""
 featured_image = ""
