@@ -1,5 +1,5 @@
 +++
-date = 2020-07-08T11:47:54-04:00
+publishdate = 2020-07-08T11:47:54-04:00
 title = "To the Workingmen"
 draft = false
 authors = ["D. Wilkins"]
