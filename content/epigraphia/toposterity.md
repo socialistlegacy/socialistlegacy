@@ -2,6 +2,7 @@
 date = "2019-03-12"
 genre = ["poetry"]
 title = "To Posterity"
+draft = true
 authors = ["Brecht"]
 tags = ["regression"]
 postsummary = """Indeed I live in the dark ages!  

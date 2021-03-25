@@ -1,6 +1,7 @@
 ---
 title: "A common plan"
 date: 2019-03-12T17:58
+draft: true
 authors: ["Engels"]
 sources: ["The Principles of Communism"]
 exlink: "https://www.marxists.org/archive/marx/works/1847/11/prin-com.htm"

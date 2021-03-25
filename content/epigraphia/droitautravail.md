@@ -2,6 +2,7 @@
 title: "Droit au travail"
 date: 2019-03-12T17:14:59-04:00
 authors: ["Marx"]
+draft: true
 sources: ["The Class Struggles in France, 1848-1850"]
 tags: ["right to work", "proletariat", "bourgeois socialism", "Marxism", "socialism", "1848"]
 exlink: "https://www.marxists.org/archive/marx/works/1850/class-struggles-france/ch02.htm"

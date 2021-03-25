@@ -2,6 +2,7 @@
 title: "The true realm of freedom"
 date: 2019-03-12T19:56:08-04:00
 authors: ["Marx"]
+draft: true
 sources: ["Capital vol 3"]
 tags: ["freedom", "Marxism", "capitalism", "disposable time", "communism", "nature"]
 exlink: "https://www.marxists.org/archive/marx/works/1894-c3/ch48.htm"

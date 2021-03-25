@@ -1,0 +1,38 @@
+{{ define "main" }}
+  <main id="main">
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+    <ul class="patterns-list">
+      {{ $type := .Type }}
+      {{ range $key, $value := .Data.Terms.ByCount }}
+        {{ $name := .Name }}
+        {{ $count := .Count }}
+        {{ with $.Site.GetPage (printf "/%s/%s" $type $name) }}
+        <li>
+          <h2>
+            <a href="{{ .Permalink }}">
+              {{ $post := .Title | urlize }}
+              {{ $a := newScratch }}
+              {{ range shuffle (readDir "static/images/mastheads") }}
+              {{ if in .Name $post }}
+              {{ $a.Add "name" (slice .Name) }}
+              {{ end }}
+              {{ end }}
+              {{ $b := split (trim (print ($a.Get "name")) "[]") " " }}
+              {{ $mastfile := print "static/images/mastheads/" (index $b 0) }}
+              {{ $mastimage := print "images/mastheads/" (index $b 0) }}
+          
+              {{ if fileExists $mastfile }}
+              <img style="max-width:100%" src="{{ $mastimage | absURL }}" />
+              {{else}}
+              <h2>{{ printf "%s (%d)" .Title $count }}</h2>
+              {{end}}
+
+            </a>
+          </h2>
+        </li>
+        {{ end }}
+      {{ end }}
+    </ul>
+  </main>
+{{ end }}

@@ -46,13 +46,15 @@ summaryLength = 1
     url = "/about/"
     weight = 1
   [[menu.nav]]
-    name = "Epigraphia"
-    url = "/epigraphia/"
-    weight = 2
-  [[menu.nav]]
     name = "Ephemera"
     url = "/ephemera/"
     weight = 3
+  [[menu.nav]]
+    name = "Library"
+    url = "/library/"
+    weight = 4
+
+
   [[menu.nav]]
     name = "Tags"
     url = "/tags/"
@@ -60,8 +62,4 @@ summaryLength = 1
   [[menu.nav]]
     name = "Authors"
     url = "/authors/"
-    weight = 4
-  [[menu.nav]]
-    name = "Sources"
-    url = "/sources/"
     weight = 4

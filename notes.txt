@@ -1,3 +1,47 @@
+Ephemera:
+- about ephemera
+- Link to periodicals
+- Sort Ephemera by publish date, by post date
+- Filters: genres (genre page), periodical (go to periodical page), tags (individual tag pages), year and month (year and month pages), author (author page)
+
+Genre, tag, year and month, and author pages
+- should each have filters for the others that work as filters rather than redirects
+- toggle ephemera, library, all posts
+
+
+Periodical pages: 
+- genre filter, tag filter. author
+- toggle ephemera and whole issues
+
+Library: 
+- page for each entry and pdf on list (page includes description and other info, transcription where applicable; if none of the above, no link to page, just pdf)
+- filter by date, genre, author, tags
+
+Main page
+- replace Periodical issue info with "Ephemera", "Library", "Audio/Video", etc
+
+Nav:
+About
+Ephemera
+Library
+Audio/Video
+Search
+Store
+Links
+
+Merch: https://www.etsy.com/shop/RetroStickerShop
+
+
+http://depts.washington.edu/labhist/laborpress/
+
+Infinite Scroll: https://discourse.gohugo.io/t/has-anyone-implemented-infinite-scrolling-on-a-hugo-website/2985/2
+Site search
+- https://craftweeks.com/en/set-google-custom-search-on-amp-static-sites/
+
+
+At least one image post per day - instagram
+Written posts should total enough material for multiple twitter posts (excerpts)
+
 
 Link to:
 - instagram Posts
@@ -70,8 +114,6 @@ Page for each genre
 Archive - by year and month
 - https://discourse.gohugo.io/t/how-to-generate-chronological-blog-archives-in-hugo/13491
 
-Site search
-- https://craftweeks.com/en/set-google-custom-search-on-amp-static-sites/
 
 
 Posts for:

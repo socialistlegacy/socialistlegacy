@@ -28,6 +28,12 @@ template {
 * + * {
     margin-top: 2.25rem;
 }
+select:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+
 br,
 dt,
 dd,
@@ -70,7 +76,7 @@ abbr {
     border-bottom: 1px dashed;
 }
 img {
-    max-width: 350px;
+  /*  max-width: 350px; */
     max-height: 900px;
 }
 img[src$='#center']

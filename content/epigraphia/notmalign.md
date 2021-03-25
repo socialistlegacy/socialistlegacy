@@ -2,6 +2,7 @@
 title: "Not malign"
 date: 2019-03-12T17:10:42-04:00
 authors: ["Adorno"]
+draft: true
 sources: ["Minima Moralia"]
 tags: ["becoming", "critical theory"]
 ---
