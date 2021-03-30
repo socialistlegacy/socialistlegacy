@@ -14,7 +14,7 @@
     {{ end }}
         </h2>
         <div class="tags">
-          {{ partial "periodical.html" . }}
+          {{ .Section | humanize }}
         </div>     
     
     <a href="{{ .RelPermalink }}">   

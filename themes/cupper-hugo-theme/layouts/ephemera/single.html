@@ -20,7 +20,7 @@
     <div class="tags"><b>Source:</b> {{ partial "periodical.html" . }}</div>
 
 
-    <br />{{ with .Params.featured_image }}<a href="{{ . }}" class="img-link"><img src="{{ . }}" style="max-height:700px;max-width:350px"></a>{{ end }}
+    <br />{{ with .Params.featured_image }}<a href="{{ . }}" class="img-link"><img src="{{ . }}" style="max-height:700px;max-width:100%"></a>{{ end }}
     {{ if ne .Params.toc false }}
       {{ partial "toc" . }}
     {{ end }}

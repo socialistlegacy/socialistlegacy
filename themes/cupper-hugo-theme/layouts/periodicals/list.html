@@ -17,7 +17,7 @@
     <h1>{{ .Title }}</h1>
     {{end}}
 
-    {{if and (ne $per "periodicals") (fileExists (print "content/desc/" $per ".txt")) }}
+    {{if fileExists (print "content/desc/" $per ".txt") }}
     <div class="expandable-section">
         <button aria-expanded="false" data-expands="js-expandable">
           <span class="expandable-label" style="font-size:.8em">About</span>
@@ -34,14 +34,10 @@
     </div>
     {{ end }}
 
-    <span style="font-size:.7em">Sort by:</span> <select id="sort" onchange="sortlist()">
-      <option value="postrev">Date Posted (newest first)</option>
-      <option value="post">Date Posted (oldest first)</option>
-      <option value="pubrev">Date Published (newest first)</option>
-      <option value="pub">Date Published (oldest first)</option>
-    </select>    
+    <div style="margin-top:2.25rem">
+      {{ partial "sortselect.html" . }}
 
-<select id="vol" onchange="pervol()" style="float:right">
+<select id="vol" onchange="pervol()" style="float:right;margin-top:0">
   <option value="none">Select Volume</option>
       {{ range $vol, $pages := .Site.Taxonomies.volume }}
       {{ if in $vol $per }}
@@ -50,7 +46,9 @@
       {{ end }}
       {{ end }}
 </select>
+</div>
 
+<div style="margin-top:4.5rem">
     <div id="postrev"><ul class="patterns-list">
     {{ $var := .Pages.ByDate.Reverse }}
     {{ range $var }}
@@ -142,7 +140,7 @@
           </li>        
         {{ end }}
         </ul></div>          
-
+</div>
 
 
   </main>

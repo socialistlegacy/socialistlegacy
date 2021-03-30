@@ -1,3 +1,12 @@
+
+Large Files for netlify
+
+Fix drop downs on mobile view
+
+Organize library
+
+Ephemera
+
 Ephemera:
 - about ephemera
 - Link to periodicals
@@ -143,3 +152,4 @@ Merch (buttons, tshirts, mugs, etc)
 
 
 
+August Claessens - A Manual for Socialist Speakers
