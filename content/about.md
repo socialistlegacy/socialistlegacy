@@ -3,5 +3,9 @@ date: "2014-04-09"
 title: "About"
 ---
 {{< justify >}}
-*The Socialist Legacy* is an anthology of material found in the archives of old socialist publications; a digest of perplexing and captivating fragments, selected for provoking wonder or melancholy.
+*The Socialist Legacy* is an anthology of the historical socialist movement, drawn from long-neglected periodicals, pamphlets, and books bequeathed by that mostly forgotten or misunderstood tradition.
+
+We hope to inspire renewed interest in that tradition, and to rectify prevailing misconceptions concerning its nature and aims.
+
+
 {{< /justify >}}

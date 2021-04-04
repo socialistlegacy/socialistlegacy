@@ -7,6 +7,7 @@
         <h2>
           <a href="{{ .Permalink }}">
             {{ .Title }} {{ with .Params.authors }}&mdash;
+          </a>
           {{ range . }}
               {{ $href := print ("authors/" | absLangURL) (. | urlize) "/" }}
               <a href="{{ $href }}">{{ . }}</a>
@@ -14,7 +15,9 @@
     {{ end }}
         </h2>
         <div class="tags">
-          {{ .Section | humanize }}
+          {{ if eq .Section "ephemera"}}
+          {{ partial "periodical.html" . }}
+          {{ end }}
         </div>     
     
     <a href="{{ .RelPermalink }}">   

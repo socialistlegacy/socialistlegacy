@@ -337,6 +337,15 @@ caption {
 }
 
 /* Page structure */
+.sidebar {
+    overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.sidebar::-webkit-scrollbar {
+    display: none;
+}
+
 .wrapper {
     position: relative;
     margin-top: 0;
@@ -353,7 +362,7 @@ caption {
     border-right: 2px solid;
 }
 .intro-and-nav > div {
-    padding: 2rem;
+    padding: 1.25rem;
     display: flex;
     flex-direction: column;
     height: 100%;

@@ -1,0 +1,18 @@
+{{ $per := index (split .Title "/") 0 | urlize }}
+
+{{if fileExists (print "content/desc/" $per ".txt") }}
+<div class="expandable-section">
+    <button aria-expanded="false" data-expands="js-expandable-01">
+      <span class="expandable-label" style="font-size:.8em">About</span>
+      <svg aria-hidden="true" focusable="false" viewBox="0 0 70.866142 70.866141">
+        <g transform="translate(0 -981.5)">
+          <rect style="stroke-width:0;fill:currentColor" height="48" width="8" y="993.36" x="30.051" class="up-strut" />
+          <rect style="stroke-width:0;fill:currentColor" height="8" width="48" y="1013.4" x="10"/>
+        </g>
+      </svg>
+    </button>
+  <div id="js-expandable-01" style="font-size:.9em;text-align:justify" hidden>
+    {{ readFile (print "desc/" $per ".txt") | markdownify }}
+  </div>
+</div>
+{{ end }}

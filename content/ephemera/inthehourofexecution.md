@@ -9,7 +9,7 @@ issue: ["the-agitator/v01/n01"]
 date: 1910-11-15
 year: ["1910"]
 month: ["1910/11"]
-genres: ["poetry"]
+genre: ["poetry"]
 exlink: "https://www.marxists.org/history/usa/pubs/agitator/v1n01-nov-15-1910-agitator.pdf"
 tags: ["freedom", "death", "Haymarket martyrs"]
 ---

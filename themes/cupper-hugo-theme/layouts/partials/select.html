@@ -1,0 +1,159 @@
+{{ $per := index (split .Title "/") 0 | urlize }}
+
+
+
+<div class="expandable-section">
+  <button aria-expanded="false" id="button02" data-expands="js-expandable-02">
+    <span class="expandable-label" style="font-size:.8em">Sort & Filter Posts</span>
+    <svg aria-hidden="true" focusable="false" viewBox="0 0 70.866142 70.866141">
+      <g transform="translate(0 -981.5)">
+        <rect style="stroke-width:0;fill:currentColor" height="48" width="8" y="993.36" x="30.051" class="up-strut" />
+        <rect style="stroke-width:0;fill:currentColor" height="8" width="48" y="1013.4" x="10"/>
+      </g>
+    </svg>
+  </button>
+<div id="js-expandable-02" style="font-size:.9em;text-align:justify" hidden>
+
+<p id="section" style="display:none">{{ .Section }}</p>
+
+<div style="margin-top:0">
+    {{ partial "sortselect.html" . }}
+
+    <select id="iss" onchange="iss()" style="display:none;float:right;margin-left:5px;margin-top:0">
+      <option value="none">Select Issue</option>
+          {{ range $iss, $pages := .Site.Taxonomies.issue }}
+          {{ if in $iss $per }}
+          {{ $issnum := index (split $iss "/n") 1}}
+          <option value="{{ $issnum | safeHTML }}">No. {{ $issnum }}</option>
+          {{ end }}
+          {{ end }}
+    </select>
+
+    <select id="vol" onchange="vol()" style="display:none;float:right;margin-left:5px;margin-top:0">
+      <option value="none">Select Volume</option>
+          {{ range $vol, $pages := .Site.Taxonomies.volume }}
+          {{ if in $vol $per }}
+          {{ $volnum := index (split $vol "/v") 1}}
+          <option value="{{ $volnum }}">Vol. {{ $volnum }}</option>
+          {{ end }}
+          {{ end }}
+    </select>
+
+    <select id="periodical" onchange="periodical()" style="display:none;float:right;margin-left:5px;margin-top:0">
+      <option value="none">Periodical</option>
+      <option value="all">All periodicals</option>
+      {{ $periodicals := newScratch }}
+      {{ range .Pages }}
+      {{ range .Params.periodicals }}
+      {{ $periodicals.Add "periodical" (slice . )}}
+      {{ end }}
+      {{ end }}
+      {{ $uperiodicals := uniq ($periodicals.Get "periodical")}}
+      {{ range $periodical := $uperiodicals }}
+      <option value="{{ $periodical | urlize }}">{{ $periodical }}</option>
+      {{ end }}
+        </select>
+  </div>
+
+  <div style="clear:both;margin-top:0"></div>
+    <select id="filter" onchange="filter()" style="float:left;margin-top:10px">
+      <option value="none">Filter by:</option>
+      <option value="date">Date</option>
+      <option value="author">Author</option>
+      <option value="genre">Genre</option>
+      <option value="tag">Tag</option>
+    </select>
+  
+
+    <select id="genre" onchange="genre()" style="display:none;float:left;margin-left:5px;margin-top:10px">
+    <option value="none">...</option>
+    {{ $genres := newScratch }}
+    {{ range .Pages }}
+    {{ range .Params.genre }}
+    {{ $genres.Add "genre" (slice . ) }}
+    {{ end }}
+    {{ end }}
+    {{ $ugenres := uniq ($genres.Get "genre")}}
+    {{ range $genre := sort $ugenres }}
+    <option value="{{ $genre }}">{{ $genre }}</option>
+    {{ end }}
+    </select>
+
+  <select id="tags" onchange="tags()" style="display:none;float:left;margin-left:5px;margin-top:10px">
+    <option value="none">All</option>
+    {{ $tags := newScratch }}
+    {{ range .Pages }}
+    {{ range .Params.tags }}
+    {{ $tags.Add "tag" (slice . )}}
+    {{ end }}
+    {{ end }}
+    {{ $utags := uniq ($tags.Get "tag")}}
+    {{ range $tag := sort $utags }}
+    <option value="{{ $tag | lower | urlize }}">{{ $tag }}</option>
+    {{ end }}
+      </select>
+
+  <select id="author" onchange="author()" style="display:none;float:left;margin-left:5px;margin-top:10px">
+    <option value="none">...</option>
+    {{ $authors := newScratch }}
+    {{ range .Pages }}
+    {{ range .Params.authors }}
+    {{ $authors.Add "author" (slice . ) }}
+    {{ end }}
+    {{ end }}
+    {{ $uauthors := uniq ($authors.Get "author")}}
+    {{ range $uauthors }}
+      {{ $namearray := split . " " }}
+      {{ $names := sub (len $namearray) 1 }}
+      {{ if eq $names 2 }}
+        {{ $lastfirst := print (index $namearray $names) ",-" (index $namearray 0) "-" (index $namearray 1) }}
+        {{ $authors.Add "alpha" (slice $lastfirst ) }}
+      {{ else }}
+        {{ $lastfirst := print (index $namearray $names) ",-" (index $namearray 0) }}
+        {{ $authors.Add "alpha" (slice $lastfirst ) }}
+      {{ end }}
+    {{ end }}
+    {{ $aauthors := split (trim (print ($authors.Get "alpha")) "[]") " " }}
+    {{ range $author := sort $aauthors }}
+    {{ $author1 := replace $author "-" " "}}
+    <option value="{{ $author1 }}">{{ $author1 }}</option>
+    {{ end }}
+      </select>
+
+  <select id="year" onchange="year()" style="display:none;float:left;margin-left:5px;margin-top:10px">
+    <option value="none">Year</option>
+    {{ $years := newScratch }}
+    {{ range .Pages }}
+    {{ range .Params.year }}
+    {{ $years.Add "year" (slice . )}}
+    {{ end }}
+    {{ end }}
+    {{ $uyears := uniq ($years.Get "year")}}
+    {{ range $year := sort $uyears }}
+    <option value="{{ $year }}">{{ $year }}</option>
+    {{ end }}
+      </select>
+
+  <select id="month" onchange="month()" style="display:none;float:left;margin-left:5px;margin-top:10px">
+    <option value="none">Month</option>
+    {{ $months := newScratch }}
+    {{ range .Pages }}
+    {{ range .Params.month }}
+    {{ $months.Add "month" (slice . )}}
+    {{ end }}
+    {{ end }}
+    {{ $umonths := uniq ($months.Get "month")}}
+    {{ range $month := $umonths }}
+    <option value="{{ $month }}">{{ $month }}</option>
+    {{ end }}
+      </select>
+
+  <select id="pertype" onchange="pertype()" style="display:none;float:right;margin-left:5px;margin-top:10px">
+    <option value="ephemera">Ephemera</option>
+    <option value="full">Full issues</option>
+      </select>
+      
+<div style="clear:both;margin:0"></div>
+
+</div>
+</div>

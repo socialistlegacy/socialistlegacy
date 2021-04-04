@@ -12,10 +12,6 @@
     {{ end }}
   {{ end }}
 
-  {{ if eq .Title "Volume"}}
-      <meta http-equiv="refresh" content="0; url=/index.html" />
-  {{ end }}
-
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -36,7 +32,7 @@
     img:not([src*=".svg"]), .colors, iframe, .demo-container { filter: invert(100%) }
   </style>
 
-  {{ $title := print .Title " | " .Site.Title }}
+  {{ $title := print (replace .Title "/" " " | humanize | title) " | " .Site.Title }}
   {{ if .IsHome }}
     {{ $title = .Site.Title }}
   {{ end }}

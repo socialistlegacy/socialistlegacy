@@ -1,10 +1,10 @@
 <header class="intro-and-nav" role="banner">
-  <div>
+  <div class="sidebar">
     <div class="intro">
       <a class="logo" href="/" aria-label="{{ .Site.Title }} home page">
         <img src="{{ "images/logo.svg" | absURL }}" alt="">
       </a>
-      <p class="library-desc">
+      <p class="library-desc" style="margin-top:.8rem">
         {{ with .Site.Params.description }}
           {{ . | markdownify }}
         {{ end }}

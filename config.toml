@@ -13,7 +13,7 @@ summaryLength = 1
   authors-sorted-alphabetically = "authors sorted alphabetically"
   source = "sources"
   source-date = "source dates"
-  genre = "genres"
+  genre = "genre"
   year = "year"
   month = "month"
   book = "books"
@@ -48,18 +48,28 @@ summaryLength = 1
   [[menu.nav]]
     name = "Ephemera"
     url = "/ephemera/"
+    weight = 2
+  [[menu.nav]]
+    name = "Epigraphia"
+    url = "/epigraphia/"
     weight = 3
+  [[menu.nav]]
+    name = "Embers"
+    url = "/embers/"
+    weight = 4
   [[menu.nav]]
     name = "Library"
     url = "/library/"
-    weight = 4
-
-
+    weight = 5
   [[menu.nav]]
-    name = "Tags"
-    url = "/tags/"
-    weight = 4
-  [[menu.nav]]
-    name = "Authors"
-    url = "/authors/"
-    weight = 4
+    name = "Audio/Video"
+    url = "/audio-video/"
+    weight = 6
+  # [[menu.nav]]
+  #   name = "Search"
+  #   url = "/search/"
+  #   weight = 7
+  # [[menu.nav]]
+  #   name = "Store"
+  #   url = "/store/"
+  #   weight = 8

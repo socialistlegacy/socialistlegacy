@@ -1,0 +1,39 @@
+{{ $section := .sect}}
+{{ $page := .Page }}
+
+<li>
+    <h2>
+      <a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a>
+        {{ with .Page.Params.authors }}&mdash;
+            {{ range . }}
+                {{ $href := print ("authors/" | absLangURL) (. | urlize) "/" }}
+                <a href="{{ $href }}">{{ . }}</a>
+            {{ end }}
+        {{ end }}
+    </h2>
+    <div class="tags">
+      {{ if eq .Page.Section "ephemera" }}
+        {{ if eq $section "issue" }}
+          {{ partial "issuedate.html" $page }}
+        {{ else if eq $section "volume" }}
+          {{ partial "issue.html" $page }}
+        {{ else if eq $section "periodicals" }}
+          {{ partial "volume.html" $page }}
+        {{ else if eq $section "ephemera" }}
+          {{ partial "periodical.html" $page }}
+        {{ end }}
+      {{ end }}
+    </div>
+    <a href="{{ .Page.RelPermalink }}">
+        {{ with .Page.Params.featured_image }}
+            <img src="{{ . }}" style="max-width:330px;max-height:700px;margin-top:1em">
+        {{ end }}
+        <div style="margin-top:1em;text-align:justify">
+            {{ if .Page.Params.postsummary }}
+                {{ .Page.Params.postsummary | markdownify }}
+            {{ else }}
+                {{ .Page.Summary }}
+            {{ end }}
+        </div>
+    </a>
+</li>        

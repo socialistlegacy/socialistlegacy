@@ -1,42 +1,60 @@
 
+
+Substack icon
+
 Large Files for netlify
 
-Fix drop downs on mobile view
-
 Organize library
+
+Sort periodicals terms list by... name, count, date 
+
+
+All Sections 
+- Genre, Tag, Year (month), author, section (go to page)
+
+Periodicals
+- Section, Vol (issue), Genre, tag, year (month), author
+
+Ephemera
+- Periodicals (go to page), Genre, Tag, Year (Month), Author
+
+Library
+- Sort alphabetically (author, title)
+- Genre, Year, Tag, Author, Publisher, Letter
+
+Audio/Video
+- Genre, Tag, Author
+
+Embers
+- Tag
+
+Epigraphia
+- Genre, Tag, Author, Year (month)
+
+Section: All section, Ephemera, Library, Audio/Video, Epigraphia, Embers, Store
+
+
 
 Ephemera
 
 Ephemera:
 - about ephemera
-- Link to periodicals
-- Sort Ephemera by publish date, by post date
-- Filters: genres (genre page), periodical (go to periodical page), tags (individual tag pages), year and month (year and month pages), author (author page)
 
-Genre, tag, year and month, and author pages
-- should each have filters for the others that work as filters rather than redirects
-- toggle ephemera, library, all posts
-
-
-Periodical pages: 
-- genre filter, tag filter. author
-- toggle ephemera and whole issues
 
 Library: 
 - page for each entry and pdf on list (page includes description and other info, transcription where applicable; if none of the above, no link to page, just pdf)
 - filter by date, genre, author, tags
 
-Main page
-- replace Periodical issue info with "Ephemera", "Library", "Audio/Video", etc
 
 Nav:
 About
 Ephemera
+Epigraphia
+Embers
 Library
 Audio/Video
 Search
 Store
-Links
 
 Merch: https://www.etsy.com/shop/RetroStickerShop
 

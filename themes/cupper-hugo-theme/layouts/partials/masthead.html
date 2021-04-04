@@ -1,0 +1,18 @@
+{{ $per := index (split .Title "/") 0 | urlize }}
+{{ $a := newScratch }}
+{{ range shuffle (readDir "static/images/mastheads") }}
+{{ if in .Name $per }}
+{{ $a.Add "name" (slice .Name) }}
+{{ end }}
+{{ end }}
+{{ $b := split (trim (print ($a.Get "name")) "[]") " " }}
+{{ $mastfile := print "static/images/mastheads/" (index $b 0) }}
+{{ $mastimage := print "images/mastheads/" (index $b 0) }}
+
+<a class="source" href="/periodicals/{{ index (split $per "/") 0 }}">
+{{ if fileExists $mastfile }}
+<img style="max-width:100%" src="{{ $mastimage | absURL }}" />
+{{else}}
+<h1>{{ replace (index (split .Title "/") 0) "-" " " | title }}</h1>
+{{end}}
+</a>
