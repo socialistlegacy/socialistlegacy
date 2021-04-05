@@ -9,7 +9,7 @@
   {{ $current := . }}
   <ul id="patterns-list">
   {{ range .Site.Menus.nav }}
-    <li style="text-align:center">
+    <li class="pattern" style="text-align:center">
       {{ $active := or ($current.IsMenuCurrent "nav" .) ($current.HasMenuCurrent "nav" .) }}
       {{ $active = or $active (eq .Name $current.Title) }}
       {{ $active = or $active (and (eq .Name "Blog") (eq $current.Section "post")) }}
