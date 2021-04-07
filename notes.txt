@@ -2,11 +2,23 @@
 
 Substack icon
 
+Darker reddit icon
+
 Large Files for netlify
 
 Organize library
 
+
+Author Page filters
+Library - sort and filter
+Audio/Video
+Embers
+Epigraphia
+About page
+Page descriptions
 Sort periodicals terms list by... name, count, date 
+Month filter
+
 
 
 All Sections 

@@ -1,91 +1,243 @@
 <div style="margin-top:3rem">
-<div id="postrev"><ul class="patterns-list">
+{{ $title := .Title }}
 
+<div id="postrev"><ul class="patterns-list">
   <div class="nofilter">
     {{ range .Pages.ByPublishDate.Reverse }}
-  
-    {{ partial "postlistitems.html" (dict "Page" . "sect" $.Section) }}
-    
+      {{ partial "postlistitems.html" (dict "Page" . "sect" $.Section) }}    
     {{ end }}</div>
   
   <div class="tagfilter" style="display:none">
   {{ range $name, $page := .Site.Taxonomies.tags }}
-
-    <div class="filterterm {{ $name }}" style="display:none">
-      {{ $name }}
+    <div class="filtertag {{ $name }}" style="display:none">
       {{ range .Pages.ByPublishDate.Reverse }}
-        {{ partial "postlistitems.html" (dict "Page" . "sect" $.Section) }}
+        {{ $section := .Section | humanize }}
+        {{ if or (in $section $title) (in .Params.periodicals $title) (in .Params.volume $title) (in .Params.issue $title) }}
+          {{ partial "postlistitems.html" (dict "Page" . "sect" $.Section) }}
+        {{ end }}  
       {{ end }}
     </div>
   {{ end }}
   </div>
 
+  <div class="genrefilter" style="display:none">
+    {{ range $name, $page := .Site.Taxonomies.genre }}
+      <div class="filtergenre {{ $name }}" style="display:none">
+        {{ range .Pages.ByPublishDate.Reverse }}
+          {{ $section := .Section | humanize }}
+          {{ if or (in $section $title) (in .Params.periodicals $title) (in .Params.volume $title) (in .Params.issue $title) }}
+            {{ partial "postlistitems.html" (dict "Page" . "sect" $.Section) }}
+          {{ end }}  
+        {{ end }}
+      </div>
+    {{ end }}
+    </div>
+
+  <div class="authorfilter" style="display:none">
+    {{ range $name, $page := .Site.Taxonomies.authors }}
+      <div class="filterauthor {{ $name }}" style="display:none">
+        {{ range .Pages.ByPublishDate.Reverse }}
+          {{ $section := .Section | humanize }}
+          {{ if or (in $section $title) (in .Params.periodicals $title) (in .Params.volume $title) (in .Params.issue $title) }}
+            {{ partial "postlistitems.html" (dict "Page" . "sect" $.Section) }}
+          {{ end }}  
+        {{ end }}
+      </div>
+    {{ end }}
+    </div>
+  
+  <div class="yearfilter" style="display:none">
+    {{ range $name, $page := .Site.Taxonomies.year }}
+      <div class="filteryear {{ $name }}" style="display:none">
+        {{ range .Pages.ByPublishDate.Reverse }}
+          {{ $section := .Section | humanize }}
+          {{ if or (in $section $title) (in .Params.periodicals $title) (in .Params.volume $title) (in .Params.issue $title) }}
+            {{ partial "postlistitems.html" (dict "Page" . "sect" $.Section) }}
+          {{ end }}  
+        {{ end }}
+      </div>
+    {{ end }}
+    </div>
 
 </ul></div>
 
 <div id="post" style="display:none"><ul class="patterns-list">
   <div class="nofilter">
     {{ range .Pages.ByPublishDate }}
-
-    {{ partial "postlistitems.html" (dict "Page" . "sect" $.Section) }}
-
+      {{ partial "postlistitems.html" (dict "Page" . "sect" $.Section) }}
     {{ end }}</div>
   
     <div class="tagfilter" style="display:none">
     {{ range $name, $page := .Site.Taxonomies.tags }}
-  
-      <div class="filterterm {{ $name }}" style="display:none">
+      <div class="filtertag {{ $name }}" style="display:none">
       {{ range .Pages.ByPublishDate }}
-      {{ partial "postlistitems.html" (dict "Page" . "sect" $.Section) }}
+        {{ $section := .Section | humanize }}
+        {{ if or (in $section $title) (in .Params.periodicals $title) (in .Params.volume $title) (in .Params.issue $title) }}
+          {{ partial "postlistitems.html" (dict "Page" . "sect" $.Section) }}
+        {{ end }}  
       {{ end }}
       </div>
     {{ end }}
     </div>
 
+  <div class="genrefilter" style="display:none">
+    {{ range $name, $page := .Site.Taxonomies.genre }}
+      <div class="filtergenre {{ $name }}" style="display:none">
+        {{ range .Pages.ByPublishDate }}
+          {{ $section := .Section | humanize }}
+          {{ if or (in $section $title) (in .Params.periodicals $title) (in .Params.volume $title) (in .Params.issue $title) }}
+            {{ partial "postlistitems.html" (dict "Page" . "sect" $.Section) }}
+          {{ end }}  
+        {{ end }}
+      </div>
+    {{ end }}
+    </div>
+
+  <div class="authorfilter" style="display:none">
+    {{ range $name, $page := .Site.Taxonomies.authors }}
+      <div class="filterauthor {{ $name }}" style="display:none">
+        {{ range .Pages.ByPublishDate }}
+          {{ $section := .Section | humanize }}
+          {{ if or (in $section $title) (in .Params.periodicals $title) (in .Params.volume $title) (in .Params.issue $title) }}
+            {{ partial "postlistitems.html" (dict "Page" . "sect" $.Section) }}
+          {{ end }}  
+        {{ end }}
+      </div>
+    {{ end }}
+    </div>
+  
+  <div class="yearfilter" style="display:none">
+    {{ range $name, $page := .Site.Taxonomies.year }}
+      <div class="filteryear {{ $name }}" style="display:none">
+        {{ range .Pages.ByPublishDate }}
+          {{ $section := .Section | humanize }}
+          {{ if or (in $section $title) (in .Params.periodicals $title) (in .Params.volume $title) (in .Params.issue $title) }}
+            {{ partial "postlistitems.html" (dict "Page" . "sect" $.Section) }}
+          {{ end }}  
+        {{ end }}
+      </div>
+    {{ end }}
+    </div>
 
 </ul></div>
 
 <div id="pubrev" style="display:none"><ul class="patterns-list">
   <div class="nofilter">
     {{ range .Pages.ByDate.Reverse }}
-
-    {{ partial "postlistitems.html" (dict "Page" . "sect" $.Section) }}
-
+      {{ partial "postlistitems.html" (dict "Page" . "sect" $.Section) }}
     {{ end }}</div>
   
     <div class="tagfilter" style="display:none">
     {{ range $name, $page := .Site.Taxonomies.tags }}
-  
-      <div class="filterterm {{ $name }}" style="display:none">
+      <div class="filtertag {{ $name }}" style="display:none">
       {{ range .Pages.ByDate.Reverse }}
-      {{ partial "postlistitems.html" (dict "Page" . "sect" $.Section) }}
+        {{ $section := .Section | humanize }}
+        {{ if or (in $section $title) (in .Params.periodicals $title) (in .Params.volume $title) (in .Params.issue $title) }}
+          {{ partial "postlistitems.html" (dict "Page" . "sect" $.Section) }}
+        {{ end }}  
       {{ end }}
       </div>
     {{ end }}
     </div>
 
+  <div class="genrefilter" style="display:none">
+    {{ range $name, $page := .Site.Taxonomies.genre }}
+      <div class="filtergenre {{ $name }}" style="display:none">
+        {{ range .Pages.ByDate.Reverse }}
+          {{ $section := .Section | humanize }}
+          {{ if or (in $section $title) (in .Params.periodicals $title) (in .Params.volume $title) (in .Params.issue $title) }}
+            {{ partial "postlistitems.html" (dict "Page" . "sect" $.Section) }}
+          {{ end }}  
+        {{ end }}
+      </div>
+    {{ end }}
+    </div>
+
+  <div class="authorfilter" style="display:none">
+    {{ range $name, $page := .Site.Taxonomies.authors }}
+      <div class="filterauthor {{ $name }}" style="display:none">
+        {{ range .Pages.ByDate.Reverse }}
+          {{ $section := .Section | humanize }}
+          {{ if or (in $section $title) (in .Params.periodicals $title) (in .Params.volume $title) (in .Params.issue $title) }}
+            {{ partial "postlistitems.html" (dict "Page" . "sect" $.Section) }}
+          {{ end }}  
+        {{ end }}
+      </div>
+    {{ end }}
+    </div>
+  
+  <div class="yearfilter" style="display:none">
+    {{ range $name, $page := .Site.Taxonomies.year }}
+      <div class="filteryear {{ $name }}" style="display:none">
+        {{ range .Pages.ByDate.Reverse }}
+          {{ $section := .Section | humanize }}
+          {{ if or (in $section $title) (in .Params.periodicals $title) (in .Params.volume $title) (in .Params.issue $title) }}
+            {{ partial "postlistitems.html" (dict "Page" . "sect" $.Section) }}
+          {{ end }}  
+        {{ end }}
+      </div>
+    {{ end }}
+    </div>
 
 </ul></div>
 
 <div id="pub" style="display:none"><ul class="patterns-list">
   <div class="nofilter">
     {{ range .Pages.ByDate }}
-
-    {{ partial "postlistitems.html" (dict "Page" . "sect" $.Section) }}
-
+     {{ partial "postlistitems.html" (dict "Page" . "sect" $.Section) }}
     {{ end }}</div>
   
     <div class="tagfilter" style="display:none">
     {{ range $name, $page := .Site.Taxonomies.tags }}
-  
-      <div class="filterterm {{ $name }}" style="display:none">
+      <div class="filtertag {{ $name }}" style="display:none">
       {{ range .Pages.ByDate }}
-      {{ partial "postlistitems.html" (dict "Page" . "sect" $.Section) }}
+        {{ $section := .Section | humanize }}
+        {{ if or (in $section $title) (in .Params.periodicals $title) (in .Params.volume $title) (in .Params.issue $title) }}
+          {{ partial "postlistitems.html" (dict "Page" . "sect" $.Section) }}
+        {{ end }}  
       {{ end }}
       </div>
     {{ end }}
     </div>
 
+  <div class="genrefilter" style="display:none">
+    {{ range $name, $page := .Site.Taxonomies.genre }}
+      <div class="filtergenre {{ $name }}" style="display:none">
+        {{ range .Pages.ByDate }}
+          {{ $section := .Section | humanize }}
+          {{ if or (in $section $title) (in .Params.periodicals $title) (in .Params.volume $title) (in .Params.issue $title) }}
+            {{ partial "postlistitems.html" (dict "Page" . "sect" $.Section) }}
+          {{ end }}  
+        {{ end }}
+      </div>
+    {{ end }}
+    </div>
+
+  <div class="authorfilter" style="display:none">
+    {{ range $name, $page := .Site.Taxonomies.authors }}
+      <div class="filterauthor {{ $name }}" style="display:none">
+        {{ range .Pages.ByDate }}
+          {{ $section := .Section | humanize }}
+          {{ if or (in $section $title) (in .Params.periodicals $title) (in .Params.volume $title) (in .Params.issue $title) }}
+            {{ partial "postlistitems.html" (dict "Page" . "sect" $.Section) }}
+          {{ end }}  
+        {{ end }}
+      </div>
+    {{ end }}
+    </div>
+  
+  <div class="yearfilter" style="display:none">
+    {{ range $name, $page := .Site.Taxonomies.year }}
+      <div class="filteryear {{ $name }}" style="display:none">
+        {{ range .Pages.ByDate }}
+          {{ $section := .Section | humanize }}
+          {{ if or (in $section $title) (in .Params.periodicals $title) (in .Params.volume $title) (in .Params.issue $title) }}
+            {{ partial "postlistitems.html" (dict "Page" . "sect" $.Section) }}
+          {{ end }}  
+        {{ end }}
+      </div>
+    {{ end }}
+    </div>
 
 </ul></div>
 

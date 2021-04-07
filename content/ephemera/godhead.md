@@ -2,7 +2,7 @@
 publishdate = 2020-07-08T20:31:24-04:00
 title = "The Godhead of America"
 draft = false
-authors = []
+authors = [""]
 genre = ["cartoon"]
 tags = ["alienation"]
 periodicals = ["The Masses"]

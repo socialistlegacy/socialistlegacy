@@ -1,0 +1,22 @@
+{{ $section := .sect }}
+{{ $page := .Page }}
+
+{{ range where ($page.Pages.ByParam "authorsalpha") "Section" "library" }}
+<p><span style="border-bottom: 1px solid" onclick="libexpand({{ .Params.pdf }})">{{ .Page.Title }}</span>
+{{if ne $section "authors" }}{{ with .Page.Params.authors }}&mdash;
+    {{ range . }}
+        {{ $href := print ("authors/" | absLangURL) (. | urlize) "/" }}
+        <a href="{{ $href }}">{{ . }}</a>
+    {{ end }}
+{{ end }}
+{{ end }}
+<span id="{{ .Params.pdf }}" style="display:none">
+  <br /><small>
+  {{ if gt (len .Content) 0 }}<a href="{{ .Permalink }}">[HTML]</a>{{ end }}
+  <a href="{{ .Params.pdf }}">[PDF]</a> 
+  <br/>Published: {{ index .Params.year 0 }}
+  {{ if ne .Params.firstpublished "" }}&nbsp; First Published: {{ .Params.firstpublished}}{{ end }}
+  {{ if ne .Params.translator "" }}<br/>Translator: {{ .Params.translator }}{{ end }} 
+  {{ if ne .Params.postsummary "" }}<br />{{ .Params.postsummary }}{{ end }}  </small>
+</span>
+{{ end }}</p>

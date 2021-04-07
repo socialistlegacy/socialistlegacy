@@ -9,10 +9,14 @@
 {{ $mastfile := print "static/images/mastheads/" (index $b 0) }}
 {{ $mastimage := print "images/mastheads/" (index $b 0) }}
 
-<a class="source" href="/periodicals/{{ index (split $per "/") 0 }}">
-{{ if fileExists $mastfile }}
-<img style="max-width:100%" src="{{ $mastimage | absURL }}" />
-{{else}}
-<h1>{{ replace (index (split .Title "/") 0) "-" " " | title }}</h1>
-{{end}}
-</a>
+{{ if or (eq .Section "periodicals") (eq .Section "volume") (eq .Section "issue") }} 
+    <a class="source" href="/periodicals/{{ index (split $per "/") 0 }}">
+    {{ if fileExists $mastfile }}
+        <img style="max-width:100%" src="{{ $mastimage | absURL }}" />
+    {{else}}
+        <h1>{{ replace (index (split .Title "/") 0) "-" " " | title }}</h1>
+    {{end}}
+    </a>
+{{ else}}
+    <h1>{{ .Title }}</h1>
+{{ end }}

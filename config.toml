@@ -6,6 +6,7 @@ theme = "cupper-hugo-theme"
 googleAnalytics = "UA-123456789-1"
 disqusShortname = "yourdiscussshortname"
 summaryLength = 1
+pluralizeListTitles = false
 
 [taxonomies]
   tag = "tags"

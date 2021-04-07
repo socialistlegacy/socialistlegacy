@@ -4,7 +4,7 @@
 
 <div class="expandable-section">
   <button aria-expanded="false" id="button02" data-expands="js-expandable-02">
-    <span class="expandable-label" style="font-size:.8em">Sort & Filter Posts</span>
+    <span class="expandable-label" style="font-size:.8em">Sort & Filter</span>
     <svg aria-hidden="true" focusable="false" viewBox="0 0 70.866142 70.866141">
       <g transform="translate(0 -981.5)">
         <rect style="stroke-width:0;fill:currentColor" height="48" width="8" y="993.36" x="30.051" class="up-strut" />
@@ -43,7 +43,7 @@
       <option value="none">Periodical</option>
       <option value="all">All periodicals</option>
       {{ $periodicals := newScratch }}
-      {{ range .Pages }}
+      {{ range .Site.Pages }}
       {{ range .Params.periodicals }}
       {{ $periodicals.Add "periodical" (slice . )}}
       {{ end }}
@@ -66,7 +66,7 @@
   
 
     <select id="genre" onchange="genre()" style="display:none;float:left;margin-left:5px;margin-top:10px">
-    <option value="none">...</option>
+    <option value="none">All</option>
     {{ $genres := newScratch }}
     {{ range .Pages }}
     {{ range .Params.genre }}
@@ -75,7 +75,7 @@
     {{ end }}
     {{ $ugenres := uniq ($genres.Get "genre")}}
     {{ range $genre := sort $ugenres }}
-    <option value="{{ $genre }}">{{ $genre }}</option>
+    <option value="{{ $genre | lower | urlize }}">{{ $genre }}</option>
     {{ end }}
     </select>
 
@@ -116,10 +116,13 @@
     {{ $aauthors := split (trim (print ($authors.Get "alpha")) "[]") " " }}
     {{ range $author := sort $aauthors }}
     {{ $author1 := replace $author "-" " "}}
-    <option value="{{ $author1 }}">{{ $author1 }}</option>
+    {{ $authorv := print (index (split $author ",-") 1) "-" (index (split $author ",-") 0) | lower }}
+    {{ if ne $author "<nil>" }}
+    <option value="{{ $authorv }}">{{ $author1 }}</option>
+    {{ end }}
     {{ end }}
       </select>
-
+      
   <select id="year" onchange="year()" style="display:none;float:left;margin-left:5px;margin-top:10px">
     <option value="none">Year</option>
     {{ $years := newScratch }}
@@ -152,6 +155,7 @@
     <option value="ephemera">Ephemera</option>
     <option value="full">Full issues</option>
       </select>
+  
       
 <div style="clear:both;margin:0"></div>
 

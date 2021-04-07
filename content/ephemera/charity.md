@@ -2,7 +2,7 @@
 publishdate = 2020-07-08T19:21:31-04:00
 title = "Charity"
 draft = false
-authors = []
+authors = [""]
 genre = ["aphorism"]
 tags = ["charity"]
 periodicals = ["Good Morning"]

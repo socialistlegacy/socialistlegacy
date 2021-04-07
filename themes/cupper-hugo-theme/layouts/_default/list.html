@@ -8,9 +8,58 @@
 
     {{ partial "select.html" . }}
 
-<p id="test"></p>
+    {{ if eq .Section "library" }}
 
-    {{ partial "postlist.html" . }}
+      {{ partial "libraryitems.html" (dict "Page" . "sect" $.Section) }}
 
+    {{ else if eq .Section "authors" }}
+
+
+      {{ $a := newScratch}}
+      {{ $a.Set "count" 0 }}
+      {{ range where (.Pages.ByParam "authorsalpha") "Section" "library" }}
+        {{ $a.Add "count" 1 }}
+      {{ end }}
+      {{ if gt ($a.Get "count") 0 }}
+        <h4>Library</h4>
+      {{ end }}
+      <div style="margin-top:1rem">{{ partial "libraryitems.html" (dict "Page" . "sect" $.Section) }}</div>
+
+      {{ $b := newScratch}}
+      {{ $b.Set "count" 0 }}
+      {{ range where .Site.Pages "Section" "ephemera" }} 
+        {{ if in .Params.authors $.Title }}
+          {{ $b.Add "count" 1 }}
+        {{ end }}
+      {{ end }}
+      {{ if gt ($b.Get "count") 0 }}
+        <h4>Ephemera</h4>
+      {{ end }}
+      <div style="margin-top:1rem">
+        {{ range where .Site.Pages "Section" "ephemera" }} 
+          {{ if in .Params.authors $.Title }}
+            <div style="margin-top:.5rem"><a href="{{ .Permalink }}">{{ .Title }}</a>
+              <div class="tags">{{ partial "periodical.html" . }}</div>
+            </div>
+          {{ end }}
+        {{ end }}
+      </div>
+
+    {{ else }}
+
+      {{ partial "postlist.html" . }}
+
+    {{ end }}
+
+    <script>
+      function libexpand(x) {
+        var y = document.getElementById(x); 
+        if (y.style.display == "none") {
+          y.style.display = "inline";
+        } else if (y.style.display == "inline") {
+          y.style.display = "none";
+        }
+      }
+    </script>
   </main>
 {{ end }}
